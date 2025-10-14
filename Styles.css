@@ -31,6 +31,16 @@ The container for the boxes in Booking Requests.
     margin: 20px;
 }
 
+/*
+
+*/
+.resource-display-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 150px));
+    grid-gap: 20px;
+    margin: 20px;
+}
+
 /* 
 These boxes contain the info for Booking Requests that are pending
 */
@@ -41,6 +51,47 @@ These boxes contain the info for Booking Requests that are pending
     text-align: center;
     font-family: Arial, sans-serif;
     border: 8px;
+}
+
+/*
+Display box for the titles of the Admin Dashboard
+*/
+.resource-display-box-bold {
+    background-color: rgb(235, 235, 235);
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    text-align: center;
+    border: 8px;
+    font-weight: bold;
+}
+
+.resource-display-box-bold p {
+    border-bottom: 1px solid gray;
+    padding: 5px 0;
+}
+
+.resource-display-box-bold p:last-child {
+    border-bottom: none;
+}
+
+/*
+Display box for the resource of the Admin Dashboard
+*/
+.resource-display-box {
+    background-color: rgb(235, 235, 235);
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    text-align: center;
+    border: 8px;
+}
+
+.resource-display-box p {
+    border-bottom: 1px solid gray;
+    padding: 5px 0;
+}
+
+.resource-display-box p:last-child {
+    border-bottom: none;
 }
 
 /*
@@ -61,6 +112,17 @@ Style for the navigation bar
     font-weight: bold;
 }
 
-.login {
+.left {
     margin-left: auto;
+}
+
+.centered {
+    text-align: center;
+}
+
+.options {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(20px, 100px));
+    grid-gap: 5px;
+    margin: 20px;
 }
