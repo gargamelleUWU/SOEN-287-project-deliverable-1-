@@ -5,10 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resource Manager</title>
+    <link rel="stylesheet" href="Styles.css">
 </head>
 
 <body>
-    <header></header>
+    <header>
+        <nav class="navbar">
+            <a href="AdminDashboard.HTML">Dashboard</a>
+            <a href="ManageResources.HTML">Manage Resources</a>
+            <a href="BookingRequest.HTML">Booking Requests</a>
+            <a href="Statistics.HTML">User Statistics</a>
+            <button class="login">Login</button>
+        </nav>
+    </header>
 
     <div>
         <h1>Resource Manager</h1>
@@ -34,7 +43,11 @@
         <br>
 
         <label>Room</label>
-        <input type="text" id="room" name="room" placeholder="Enter the time">
+        <input type="text" id="room" name="room" placeholder="Enter Room Number">
+        <br>
+
+        <label for="booking-date">Date</label>
+        <input type="date" id="booking-date" name="booking-date">
         <br>
 
         <label>Start Time</label>
@@ -64,6 +77,36 @@
         </select>
         <br>
         <button>+ Create Event</button>
+    </div>
+    <hr>
+
+    <div>
+        <h3>Edit Resources</h3>
+        <div class="resource-container">
+            <div class="resource-box">
+                <label for="type">Booking Type:</label><br>
+                <select id="type" name="type">
+                    <option value="studyroom">Study Room</option>
+                    <option value="computerlab">Computer Lab</option>
+                    <option value="sportscourt">Sports Court</option>
+                </select><br><br>
+
+                <label for="location">Location:</label><br>
+                <input type="text" id="location" name="location" value="Ev Building, Room 301"><br><br>
+
+                <label for="date">Date:</label><br>
+                <input type="date" id="date" name="date" value="2025-10-20"><br><br>
+
+                <label for="time">Time:</label><br>
+                <input type="time" id="time" name="time" value="18:00"> to
+                <input type="time" id="end-time" name="end-time" value="19:00"><br><br>
+
+                <label for="student">Student Name / ID:</label><br>
+                <input type="text" id="student" name="student" value="StudentName | 12312312"><br><br>
+
+                <button type="button">Submit Edits</button>
+            </div>
+        </div>
     </div>
 </body>
 
