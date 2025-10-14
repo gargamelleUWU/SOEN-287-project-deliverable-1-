@@ -2,21 +2,102 @@
 <html lang="en">
 
 <head>
-
-
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-sc`ale=1.0">
     <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="Styles.css">
 </head>
 
-<header>
-
-</header>
-
 <body>
-    <h1> Administrator Dashboard </h1>
-    <div> Welcome to the website!</div>
+    <header></header>
+    <div>
 
+        <h1>Admin Dashboard</h1>
+        <p>Manage campus resources efficiently with comprehensive tracking and booking controls</p>
+    </div>
+
+    <div>
+        <h2>Admin Resources</h2>
+        <a href="BookingRequest.HTML">
+            <button>Booking Requests ></button>
+        </a>
+        <a href="ManageResources.HTML">
+            <button>Manage All Resources ></button>
+        </a>
+        <a href="Statistics.HTML">
+            <button>Resource Statistics ></button>
+        </a>
+    </div>
+
+    <div>
+        <h2>Manage Resources</h2>
+        <table>
+            <tr>
+                <th>Resource</th>
+                <td>Study Room 305</td>
+                <td>Computer Lab 917</td>
+                <td>Gym Court A</td>
+            </tr>
+            <tr>
+                <th>Capacity</th>
+                <td>6</td>
+                <td>25</td>
+                <td>90</td>
+            </tr>
+            <tr>
+                <th>Status</th>
+                <td>Available</td>
+                <td>Available</td>
+                <td>Available</td>
+            </tr>
+            <tr>
+                <th>Type</th>
+                <td>Study Room</td>
+                <td>Computer Lab</td>
+                <td>Sport Hall</td>
+            </tr>
+            <tr>
+                <th>Location</th>
+                <td>EV Building, Room 305</td>
+                <td>Hall Building, Room 917</td>
+                <td>Loyola Gym</td>
+            </tr>
+            <tr>
+                <th>Action</th>
+                <td><button>edit</button></td>
+                <td><button>edit</button></td>
+                <td><button>edit</button></td>
+            </tr>
+        </table>
+        <button>+ Add New Resource</button>
+        <button>View All Resources ></button>
+    </div>
+
+    <div>
+        <h2>System Overview</h2>
+        <pr>Quick insights into total bookings, users, and resource availability</pr>
+        <div class="grid-container">
+            <div class="box">
+                <h3>Total Bookings</h3>
+                <p>121</p>
+            </div>
+
+            <div class="box">
+                <h3>Active Users</h3>
+                <p>1209</p>
+            </div>
+
+            <div class="box">
+                <h3>Available Resources</h3>
+                <p>18</p>
+            </div>
+
+            <div class="box">
+                <h3>Under Maintenance</h3>
+                <p>2</p>
+            </div>
+        </div>
+    </div>
 </body>
 
 <footer></footer>

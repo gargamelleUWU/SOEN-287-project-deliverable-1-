@@ -1,0 +1,32 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    width: 400px;
+    margin: 20px auto;
+}
+
+.box {
+    background-color: rgb(235, 235, 235);
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    border: 8px;
+}
+
+.resource-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 250px));
+    grid-gap: 20px;
+    margin: 20px;
+}
+
+.resource-box {
+    background-color: rgb(235, 235, 235);
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    border: 8px;
+}
