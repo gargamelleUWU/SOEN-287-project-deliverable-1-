@@ -25,12 +25,12 @@
     </header>
 
     <div>
-        <h1>Resource Manager</h1>
-        <pr>Create, manage, edit, or cancel bookings</pr>
+        <h1 class="title">Resource Manager</h1>
+        <p class="subtitle">Create, manage, edit, or cancel bookings</p>
     </div>
 
     <div>
-        <h3>Create New Resource</h3>
+        <h3 class="title">Create New Resource</h3>
         <label>Resource Type</label>
         <select>
             <option value="studyroom">Study Room</option>
@@ -86,7 +86,7 @@
     <hr>
 
     <div>
-        <h3>Edit Resources</h3>
+        <h3 class="title">Edit Resources</h3>
         <div class="resource-container">
             <div class="resource-box">
                 <label for="type">Booking Type:</label><br>
@@ -116,7 +116,7 @@
     <hr>
 
     <div>
-        <h3>Delete Resources</h3>
+        <h3 class="title">Delete Resources</h3>
         <div class="resource-container">
             <div class="resource-box">
                 <h4> Study Room </h4>
@@ -137,20 +137,20 @@
     <hr>
 
     <div>
-        <h3>Block/Unblock Resources</h3>
-        <label>Resource Type:</label>
+        <h3 class="title">Block/Unblock Resources</h3>
+        <label class="subtitle">Resource Type:</label>
         <select>
             <option>Study Room</option>
             <option>Computer Lab</option>
             <option>Sports Court</option>
         </select><br>
-        <label>Location:</label>
+        <label class="subtitle">Location:</label>
         <select>
             <option>EV Building</option>
             <option>Hall Building</option>
             <option>Loyola Campus</option>
         </select><br>
-        <label for="time">Time:</label>
+        <label class="subtitle" for="time">Time:</label>
         <input type="time" id="time" name="time" value="18:00"> to
         <input type="time" id="end-time" name="end-time" value="19:00">
         <button class="button">Search</button>
