@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Create account · University Resources</title>
+  <title>Log in · University Resources</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="../../css/styles.css" />
 </head>
 <body>
   <div class="app-shell">
@@ -29,16 +29,11 @@
       <div class="content-col center-col">
         <div class="logo-and-card">
           <div class="logo-center">Logo</div>
-          <section class="card" role="form" aria-labelledby="signup-title">
-            <h1 id="signup-title" class="title">Create your account</h1>
-            <p class="subtitle">Register to access university resources</p>
+          <section class="card" role="form" aria-labelledby="login-title">
+            <h1 id="login-title" class="title">Access resources</h1>
+            <p class="subtitle">Secure login for university resource<br>management system</p>
 
             <form action="#" method="post" novalidate>
-              <div class="field">
-                <label class="label" for="fullName">Full name</label>
-                <input id="fullName" name="fullName" type="text" class="input" placeholder="Jane Doe" required>
-              </div>
-
               <div class="field">
                 <label class="label" for="email">Email</label>
                 <input id="email" name="email" type="email" autocomplete="email" class="input" placeholder="name@university.edu" required>
@@ -46,32 +41,30 @@
 
               <div class="field">
                 <label class="label" for="password">Password</label>
-                <input id="password" name="password" type="password" autocomplete="new-password" class="input" placeholder="At least 8 characters" required>
+                <input id="password" name="password" type="password" autocomplete="current-password" class="input" placeholder="••••••••" required>
               </div>
 
-              <div class="field">
-                <label class="label" for="confirm">Confirm password</label>
-                <input id="confirm" name="confirm" type="password" autocomplete="new-password" class="input" placeholder="Repeat your password" required>
-              </div>
+              <button class="btn btn-primary mt-12" type="submit">Log in</button>
 
-              <button class="btn btn-primary mt-12" type="submit">Create account</button>
+              <div class="divider mt-12">or continue with</div>
 
-              <div class="divider mt-12">or sign up with</div>
-
-              <button type="button" class="btn btn-ghost mt-8" aria-label="Sign up with Google">
+              <button type="button" class="btn btn-ghost mt-8" aria-label="Continue with Google">
                 <span class="icon icon-google" aria-hidden="true"></span>
                 Continue with Google
               </button>
-              <button type="button" class="btn btn-ghost mt-8" aria-label="Sign up with Facebook">
+              <button type="button" class="btn btn-ghost mt-8" aria-label="Continue with Facebook">
                 <span class="icon icon-facebook" aria-hidden="true"></span>
                 Continue with Facebook
               </button>
-              <button type="button" class="btn btn-ghost mt-8" aria-label="Sign up with Apple">
+              <button type="button" class="btn btn-ghost mt-8" aria-label="Continue with Apple">
                 <span class="icon icon-apple" aria-hidden="true"></span>
                 Continue with Apple
               </button>
 
-              <p class="text-center mt-16">Already have an account? <a href="login.html">Log in</a></p>
+              <div class="meta">
+                <a href="#">Reset password</a>
+                <a href="signup.html">New user? Create an account</a>
+              </div>
             </form>
           </section>
         </div>
