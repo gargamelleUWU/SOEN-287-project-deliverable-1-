@@ -1,177 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resource Manager</title>
-    <link rel="stylesheet" href="Styles.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Manage Resources · University Resource Booking</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
 </head>
-
 <body>
-    <header>
-        <nav class="navbar">
-            <a href="AdminDashboard.HTML">Dashboard</a>
-            <a href="ManageResources.HTML">Manage Resources</a>
-            <a href="BookingRequest.HTML">Booking Requests</a>
-            <a href="Statistics.HTML">User Statistics</a>
-            <a href="ResourceSearch.HTML">Resource Browser</a>
-            <input class="left" type="search" searchbar="Browse Resources">
-            <a href="ResourceSearch.HTML">
-                <button class="button">Search</button>
-            </a>
-            <button class="left">Login</button>
+<!-- Header -->
+<header class="site-header">
+    <div class="wrap header-row">
+        <a href="index.html" class="logo">
+            <img src="assets/logo-concordia.svg" alt="Logo">
+        </a>
+        <nav class="main-nav" aria-label="Primary">
+            <a href="index.html">Home</a>
+            <a href="BrowseResources.html">Resources</a>
+            <a href="BookingDashboard.html">Bookings</a>
+            <a href="AdminDashboard.html">Admin</a>
+
+            <div class="more">
+                <button class="more-btn" type="button" aria-haspopup="true" aria-expanded="false">More</button>
+                <div class="more-menu" role="menu">
+                    <a class="active" href="ManageResources.html" role="menuitem">Manage Resources</a>
+                    <a href="ResourceSearch.html" role="menuitem">Search</a>
+                    <a href="Statistics.html" role="menuitem">Statistics</a>
+                    <a href="calendar.html" role="menuitem">Calendar</a>
+                    <a href="CopyAdmin.html" role="menuitem">Copy Admin</a>
+                    <a href="about.html" role="menuitem">About</a>
+                    <a href="login.html" role="menuitem">Login / Signup</a>
+                </div>
+            </div>
         </nav>
-    </header>
-
-    <div>
-        <h1 class="title">Resource Manager</h1>
-        <p class="subtitle">Create, manage, edit, or cancel bookings</p>
+        <div class="header-cta"><a class="btn-pill" href="login.html">Login</a></div>
     </div>
+</header>
 
-    <div>
-        <h3 class="title">Create New Resource</h3>
-        <label>Resource Type</label>
-        <select>
-            <option value="studyroom">Study Room</option>
-            <option value="complab">Computer Lab</option>
-            <option value="sportscourt">Sport Court</option>
-        </select>
-        <br>
+<main>
+    <section class="section wrap" style="max-width:1000px;">
+        <h1 class="section-title">Resource Management</h1>
+        <p class="section-sub">Create, update, and block resources. Changes here are demo-only (session memory).</p>
 
-        <label>Location</label>
-        <select>
-            <option value="EV">EV Building</option>
-            <option value="Hall">Hall Building</option>
-            <option value="John Molson">John Molsong Building</option>
-        </select>
-        <br>
+        <!-- Create resource -->
+        <div class="card">
+            <h2 class="h5">Create new resource</h2>
+            <form id="createForm" class="field" onsubmit="return false;">
+                <div class="grid-3">
+                    <div>
+                        <label class="label" for="rType">Type</label>
+                        <select id="rType" class="input" required>
+                            <option>Study Room</option>
+                            <option>Computer Lab</option>
+                            <option>Sports Court</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="label" for="rLocation">Location</label>
+                        <input id="rLocation" class="input" type="text" placeholder="EV, Hall, Loyola" required />
+                    </div>
+                    <div>
+                        <label class="label" for="rName">Room</label>
+                        <input id="rName" class="input" type="text" placeholder="EV301" required />
+                    </div>
+                </div>
 
-        <label>Room</label>
-        <input type="text" id="room" name="room" placeholder="Enter Room Number">
-        <br>
+                <div class="grid-3">
+                    <div>
+                        <label class="label" for="rCapacity">Capacity</label>
+                        <input id="rCapacity" class="input" type="number" min="1" value="6" required />
+                    </div>
+                    <div>
+                        <label class="label" for="rEquip">Equipment</label>
+                        <input id="rEquip" class="input" type="text" placeholder="Whiteboard, outlets" />
+                    </div>
+                    <div>
+                        <label class="label" for="rStatus">Status</label>
+                        <select id="rStatus" class="input">
+                            <option>Open</option>
+                            <option>Blocked</option>
+                        </select>
+                    </div>
+                </div>
 
-        <label for="booking-date">Date</label>
-        <input type="date" id="booking-date" name="booking-date">
-        <br>
+                <div class="actions">
+                    <button id="btnCreate" class="btn btn-primary" type="submit">Create resource</button>
+                    <a class="btn" href="AdminDashboard.html">Back to Admin</a>
+                </div>
+            </form>
+        </div>
 
-        <label>Start Time</label>
-        <select>
-            <option value="eightAM">8:00 AM</option>
-            <option value="nineAM">9:00 AM</option>
-            <option value="ten">10:00 AM</option>
-            <option value="eleven">11:00 AM</option>
-            <option value="twelve">12:00 PM</option>
-            <option value="one">1:00 PM</option>
-            <option value="two">2:00 PM</option>
-            <option value="three">3:00 PM</option>
-            <option value="four">4:00 PM</option>
-            <option value="five">5:00 PM</option>
-            <option value="six">6:00 PM</option>
-            <option value="seven">7:00 PM</option>
-            <option value="eight">8:00 PM</option>
-            <option value="nine">9:00 PM</option>
-        </select>
-        <br>
+        <!-- Existing resources -->
+        <div class="card">
+            <h2 class="h5">Existing resources</h2>
 
-        <label>Duration</label>
-        <select>
-            <option value="onehour">1 hour</option>
-            <option value="twohours">2 hours</option>
-            <option value="threehours">3 hours</option>
-        </select>
-        <br>
-        <button type="button">+ Create Event</button>
-    </div>
-    <hr>
-
-    <div>
-        <h3 class="title">Edit Resources</h3>
-        <div class="resource-container">
-            <div class="resource-box">
-                <label for="type">Booking Type:</label><br>
-                <select id="type" name="type">
-                    <option value="studyroom">Study Room</option>
-                    <option value="computerlab">Computer Lab</option>
-                    <option value="sportscourt">Sports Court</option>
-                </select><br><br>
-
-                <label for="location">Location:</label><br>
-                <input type="text" id="location" name="location" value="Ev Building, Room 301"><br><br>
-
-                <label for="date">Date:</label><br>
-                <input type="date" id="date" name="date" value="2025-10-20"><br><br>
-
-                <label for="time">Time:</label><br>
-                <input type="time" id="time" name="time" value="18:00"> to
-                <input type="time" id="end-time" name="end-time" value="19:00"><br><br>
-
-                <label for="student">Student Name / ID:</label><br>
-                <input type="text" id="student" name="student" value="StudentName | 12312312"><br><br>
-
-                <button type="button">Submit Edits</button>
+            <!-- Filters for the list -->
+            <div class="field" style="margin-bottom:10px;">
+                <div class="grid-3">
+                    <div>
+                        <label class="label" for="fltType">Filter by type</label>
+                        <select id="fltType" class="input">
+                            <option value="">Any</option>
+                            <option>Study Room</option>
+                            <option>Computer Lab</option>
+                            <option>Sports Court</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="label" for="fltText">Text filter</label>
+                        <input id="fltText" class="input" type="text" placeholder="Search name or location">
+                    </div>
+                    <div class="actions" style="align-items:end;">
+                        <button class="btn" id="btnReset">Reset</button>
+                    </div>
+                </div>
             </div>
+
+            <div id="resList" class="table-like">
+                <div class="t-row t-head">
+                    <div>Resource</div><div>Capacity</div><div>Status</div><div>Type</div><div>Location</div><div>Action</div>
+                </div>
+                <!-- rows injected by JS -->
+            </div>
+            <p id="emptyMsg" class="muted" style="display:none;margin-top:10px;">No resources match your filters.</p>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="divider"></div>
+        <div class="footer-bottom">
+            <div class="copyright">© <span id="year"></span> University Resources</div>
         </div>
     </div>
-    <hr>
+</footer>
 
-    <div>
-        <h3 class="title">Delete Resources</h3>
-        <div class="resource-container">
-            <div class="resource-box">
-                <h4> Study Room </h4>
-                <p> EV Building, Room 301 </p>
-                <p> Oct 20, 6 - 7 PM </p>
-                <p> StudentName | 12312312 </p>
-                <button type="button">Delete</button>
-            </div>
-            <div class="resource-box">
-                <h4> Study Room </h4>
-                <p> EV Building, Room 301 </p>
-                <p> Oct 20, 6 - 7 PM </p>
-                <p> StudentName | 12312312 </p>
-                <button type="button">Delete</button>
-            </div>
-        </div>
-    </div>
-    <hr>
+<script>
+    // --- Session-only data store (available to other pages in same tab) ---
+    window.tempResources = window.tempResources || [
+        { name: "Study Room EV301", type: "Study Room", location: "EV", capacity: 6, status: "Open", equip: "Whiteboard, outlets" },
+        { name: "Computer Lab 916", type: "Computer Lab", location: "Hall", capacity: 32, status: "Open", equip: "Desktops, projector" },
+        { name: "Sports Court L107", type: "Sports Court", location: "Loyola", capacity: 100, status: "Open", equip: "Gym court" }
+    ];
 
-    <div>
-        <h3 class="title">Block/Unblock Resources</h3>
-        <label class="subtitle">Resource Type:</label>
-        <select>
-            <option>Study Room</option>
-            <option>Computer Lab</option>
-            <option>Sports Court</option>
-        </select><br>
-        <label class="subtitle">Location:</label>
-        <select>
-            <option>EV Building</option>
-            <option>Hall Building</option>
-            <option>Loyola Campus</option>
-        </select><br>
-        <label class="subtitle" for="time">Time:</label>
-        <input type="time" id="time" name="time" value="18:00"> to
-        <input type="time" id="end-time" name="end-time" value="19:00">
-        <button class="button">Search</button>
+    const listEl = document.getElementById('resList');
+    const emptyMsg = document.getElementById('emptyMsg');
+    const fltType = document.getElementById('fltType');
+    const fltText = document.getElementById('fltText');
+    const btnReset = document.getElementById('btnReset');
 
-        <div class="resource-container">
-            <div class="resource-box">
-                <h4> Study Room </h4>
-                <p> EV Building, Room 301 </p>
-                <p> Oct 20, 6 - 7 PM </p>
-                <p> Status: Blocked</p>
-                <button type="button">Unblock</button>
-            </div>
-            <div class="resource-box">
-                <h4> Study Room </h4>
-                <p> EV Building, Room 301 </p>
-                <p> Oct 20, 6 - 7 PM </p>
-                <p> Status: Open </p>
-                <button type="button">block</button>
-            </div>
-        </div>
-    </div>
+    function renderList() {
+        // Remove old rows except header
+        listEl.querySelectorAll('.t-row:not(.t-head)').forEach(r => r.remove());
+
+        const type = (fltType.value || '').toLowerCase();
+        const txt = (fltText.value || '').toLowerCase();
+
+        let shown = 0;
+        window.tempResources.forEach((r, idx) => {
+            const matchesType = !type || r.type.toLowerCase() === type;
+            const matchesTxt = !txt || (r.name + ' ' + r.location).toLowerCase().includes(txt);
+            if (!matchesType || !matchesTxt) return;
+
+            shown++;
+
+            const row = document.createElement('div');
+            row.className = 't-row';
+            row.innerHTML = `
+          <div>${r.name}</div>
+          <div>${r.capacity}</div>
+          <div>${r.status}</div>
+          <div>${r.type}</div>
+          <div>${r.location}</div>
+          <div class="t-actions">
+            <button class="btn btn-primary" data-act="save" data-i="${idx}">Save</button>
+            <button class="btn" data-act="toggle" data-i="${idx}">${r.status === 'Open' ? 'Block' : 'Unblock'}</button>
+            <button class="btn" data-act="del" data-i="${idx}">Delete</button>
+          </div>
+        `;
+            listEl.appendChild(row);
+        });
+
+        emptyMsg.style.display = shown ? 'none' : '';
+    }
+
+    function createResource() {
+        const type = document.getElementById('rType').value.trim();
+        const location = document.getElementById('rLocation').value.trim();
+        const name = document.getElementById('rName').value.trim();
+        const capacity = parseInt(document.getElementById('rCapacity').value, 10) || 1;
+        const equip = document.getElementById('rEquip').value.trim();
+        const status = document.getElementById('rStatus').value.trim();
+
+        if (!type || !location || !name) return;
+
+        window.tempResources.push({ name, type, location, capacity, status, equip });
+        renderList();
+        alert(`“${name}” created.`);
+        document.getElementById('createForm').reset();
+    }
+
+    // Event wiring
+    document.getElementById('btnCreate').addEventListener('click', createResource);
+    fltType.addEventListener('change', renderList);
+    fltText.addEventListener('input', renderList);
+    btnReset.addEventListener('click', (e) => {
+        e.preventDefault();
+        fltType.value = '';
+        fltText.value = '';
+        renderList();
+    });
+
+    // Row button actions (save / toggle / delete)
+    listEl.addEventListener('click', (e) => {
+        const btn = e.target.closest('button[data-act]');
+        if (!btn) return;
+        const i = +btn.getAttribute('data-i');
+        const act = btn.getAttribute('data-act');
+
+        if (act === 'save') {
+            alert(`Saved changes for “${window.tempResources[i].name}”.`);
+        } else if (act === 'toggle') {
+            const r = window.tempResources[i];
+            r.status = r.status === 'Open' ? 'Blocked' : 'Open';
+            renderList();
+        } else if (act === 'del') {
+            if (confirm(`Delete “${window.tempResources[i].name}”?`)) {
+                window.tempResources.splice(i, 1);
+                renderList();
+            }
+        }
+    });
+
+    // Initial render
+    renderList();
+</script>
 </body>
-
 </html>

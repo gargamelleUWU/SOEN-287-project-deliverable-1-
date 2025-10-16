@@ -3,197 +3,121 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Calendar · University Resources</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css" />
+    <title>Booking Calendar · University Resource Booking</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
     <style>
-        /* Calendar Layout */
-        .calendar-container {
-            max-width: 800px;
-            margin: 0 auto;
-            margin-top: 20px;
-        }
-        .calendar-header {
-            text-align: center;
-            margin-bottom: 20px;
-        }
         .calendar-grid {
             display: grid;
             grid-template-columns: repeat(7, 1fr);
-            gap: 5px;
-        }
-        .day-name {
-            font-weight: 700;
-            text-align: center;
-            padding: 8px 0;
-            background: var(--chip);
-            border-radius: 6px;
+            gap: 4px;
+            margin-top: 20px;
         }
         .day {
-            text-align: center;
-            padding: 14px 0;
-            background: #f9fafb;
-            border-radius: 6px;
-            cursor: pointer;
-            transition: background 0.2s;
             border: 1px solid var(--line);
-        }
-        .day:hover {
-            background: var(--chip);
-        }
-        .day.selected {
-            background: var(--accent);
-            color: #fff;
-            font-weight: bold;
-        }
-        .booking-list {
-            margin-top: 30px;
-            padding: 20px;
-            border: 1px solid var(--line);
-            border-radius: var(--radius);
+            border-radius: 8px;
+            padding: 8px;
+            min-height: 100px;
             background: #fff;
+            display: flex;
+            flex-direction: column;
         }
-        .booking-item {
-            border-bottom: 1px solid var(--line);
-            padding: 10px 0;
+        .day h4 {
+            font-size: 0.9rem;
+            font-weight: 700;
+            margin-bottom: 4px;
         }
-        .booking-item:last-child {
-            border-bottom: none;
+        .event {
+            background: var(--chip);
+            border-radius: 6px;
+            font-size: 0.75rem;
+            padding: 4px;
+            margin: 2px 0;
+        }
+        .calendar-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
     </style>
 </head>
 <body>
-<!-- Top Navigation -->
-<header class="topbar">
-    <div class="brand">University Resources</div>
-    <nav class="navlinks" aria-label="Primary">
-        <a href="index.html">Home</a>
-        <a href="BrowseResources.html">Resources</a>
-        <a href="BookingDashboard.html">Bookings</a>
-        <a href="AdminDashboard.html">Admin</a>
-        <div class="more">
-            <button class="more-btn" type="button">More ▾</button>
-            <div class="more-menu">
-                <a href="ResourceSearch.html">Search</a>
-                <a href="ManageResources.html">Manage Resources</a>
-                <a href="Statistics.html">Statistics</a>
-                <a class="active" href="calendar.html">Calendar</a>
-                <a href="login.html">Login / Signup</a>
+<header class="site-header">
+    <div class="wrap header-row">
+        <a href="index.html" class="logo"><img src="assets/logo-concordia.svg" alt="Logo"></a>
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="BrowseResources.html">Resources</a>
+            <a href="BookingDashboard.html">Bookings</a>
+            <a href="AdminDashboard.html">Admin</a>
+            <div class="more">
+                <button class="more-btn" type="button">More</button>
+                <div class="more-menu">
+                    <a href="ResourceSearch.html">Search</a>
+                    <a href="ManageResources.html">Manage Resources</a>
+                    <a href="Statistics.html">Statistics</a>
+                    <a class="active" href="calendar.html">Calendar</a>
+                    <a href="CopyAdmin.html">Copy Admin</a>
+                    <a href="about.html">About</a>
+                    <a href="login.html">Login / Signup</a>
+                </div>
             </div>
-        </div>
-    </nav>
-    <div class="nav-right">
-        <a class="pill" href="login.html">Login</a>
+        </nav>
+        <div class="header-cta"><a class="btn-pill" href="login.html">Login</a></div>
     </div>
 </header>
 
-<!-- Main -->
-<main class="main">
-    <section class="card calendar-container">
-        <h1 class="title">Booking Calendar</h1>
-        <p class="subtitle">Click on a date to see bookings.</p>
-
-        <!-- Calendar Header -->
+<main>
+    <section class="section wrap">
         <div class="calendar-header">
-            <h2 id="monthYear"></h2>
+            <h1 class="section-title">October 2025 Booking Calendar</h1>
         </div>
 
-        <!-- Calendar Grid -->
-        <div class="calendar-grid" id="calendar"></div>
+        <div class="calendar-grid">
+            <div class="day"><h4>1</h4><div class="event">EV301 – 10:00</div></div>
+            <div class="day"><h4>2</h4></div>
+            <div class="day"><h4>3</h4></div>
+            <div class="day"><h4>4</h4></div>
+            <div class="day"><h4>5</h4><div class="event">Lab 916 – 14:00</div></div>
+            <div class="day"><h4>6</h4></div>
+            <div class="day"><h4>7</h4><div class="event">Court L107 – 16:00</div></div>
 
-        <!-- Booking List -->
-        <div id="bookingList" class="booking-list">
-            <p style="color: var(--muted);">Select a date to view bookings.</p>
+            <div class="day"><h4>8</h4></div>
+            <div class="day"><h4>9</h4></div>
+            <div class="day"><h4>10</h4><div class="event">EV301 – 11:00</div></div>
+            <div class="day"><h4>11</h4></div>
+            <div class="day"><h4>12</h4></div>
+            <div class="day"><h4>13</h4></div>
+            <div class="day"><h4>14</h4><div class="event">Lab 916 – 15:00</div></div>
+
+            <div class="day"><h4>15</h4></div>
+            <div class="day"><h4>16</h4></div>
+            <div class="day"><h4>17</h4></div>
+            <div class="day"><h4>18</h4><div class="event">Court L107 – 17:00</div></div>
+            <div class="day"><h4>19</h4></div>
+            <div class="day"><h4>20</h4></div>
+            <div class="day"><h4>21</h4></div>
+
+            <div class="day"><h4>22</h4></div>
+            <div class="day"><h4>23</h4><div class="event">EV301 – 13:00</div></div>
+            <div class="day"><h4>24</h4></div>
+            <div class="day"><h4>25</h4></div>
+            <div class="day"><h4>26</h4><div class="event">Lab 916 – 09:00</div></div>
+            <div class="day"><h4>27</h4></div>
+            <div class="day"><h4>28</h4></div>
+
+            <div class="day"><h4>29</h4></div>
+            <div class="day"><h4>30</h4></div>
+            <div class="day"><h4>31</h4><div class="event">Court L107 – 19:00</div></div>
         </div>
     </section>
 </main>
 
-<!-- Footer -->
-<footer>© 2024 University Resources</footer>
-
-<script>
-    // Dropdown logic
-    document.addEventListener("click", (e) => {
-        const wrap = e.target.closest(".more");
-        document.querySelectorAll(".more").forEach((d) => d.classList.remove("open"));
-        if (wrap && e.target.closest(".more-btn")) wrap.classList.toggle("open");
-    });
-
-    // Calendar Generation
-    const calendarEl = document.getElementById("calendar");
-    const monthYearEl = document.getElementById("monthYear");
-    const bookingListEl = document.getElementById("bookingList");
-
-    const monthNames = [
-        "January", "February", "March", "April", "May", "June",
-        "July", "August", "September", "October", "November", "December"
-    ];
-
-    const today = new Date();
-    const year = today.getFullYear();
-    const month = today.getMonth();
-
-    monthYearEl.textContent = `${monthNames[month]} ${year}`;
-
-    const firstDay = new Date(year, month, 1).getDay();
-    const daysInMonth = new Date(year, month + 1, 0).getDate();
-
-    // Sample bookings data
-    const bookings = {
-        5: [
-            { time: "10:00 - 12:00", resource: "Study Room EV301" },
-            { time: "14:00 - 16:00", resource: "Computer Lab 916" }
-        ],
-        12: [
-            { time: "09:00 - 10:00", resource: "Sports Court L107" }
-        ],
-        21: [
-            { time: "13:00 - 15:00", resource: "Study Room EV310" },
-            { time: "16:00 - 18:00", resource: "Workshop - Room 202" }
-        ]
-    };
-
-    // Build calendar
-    const dayNames = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
-    dayNames.forEach(d => {
-        const div = document.createElement("div");
-        div.className = "day-name";
-        div.textContent = d;
-        calendarEl.appendChild(div);
-    });
-
-    for (let i = 0; i < firstDay; i++) {
-        const blank = document.createElement("div");
-        calendarEl.appendChild(blank);
-    }
-
-    for (let d = 1; d <= daysInMonth; d++) {
-        const dayDiv = document.createElement("div");
-        dayDiv.className = "day";
-        dayDiv.textContent = d;
-
-        dayDiv.addEventListener("click", () => showBookings(d, dayDiv));
-        calendarEl.appendChild(dayDiv);
-    }
-
-    function showBookings(day, el) {
-        document.querySelectorAll(".day").forEach(d => d.classList.remove("selected"));
-        el.classList.add("selected");
-
-        bookingListEl.innerHTML = "";
-
-        if (!bookings[day]) {
-            bookingListEl.innerHTML = `<p style="color: var(--muted);">No bookings for ${monthNames[month]} ${day}, ${year}.</p>`;
-            return;
-        }
-
-        bookings[day].forEach(b => {
-            const div = document.createElement("div");
-            div.className = "booking-item";
-            div.innerHTML = `<strong>${b.resource}</strong><br>${b.time}`;
-            bookingListEl.appendChild(div);
-        });
-    }
-</script>
+<footer class="site-footer">
+    <div class="container">
+        <div class="divider"></div>
+        <div class="footer-bottom"><div class="copyright">© <span id="year"></span> University Resources</div></div>
+    </div>
+</footer>
 </body>
 </html>

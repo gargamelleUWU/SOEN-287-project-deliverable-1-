@@ -1,115 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Dashboard</title>
-    <link rel="stylesheet" href="Styles.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Admin Dashboard · University Resource Booking</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
 </head>
-
 <body>
-    <header>
-        <nav class="navbar">
-            <a href="AdminDashboard.HTML">Dashboard</a>
-            <a href="ManageResources.HTML">Manage Resources</a>
-            <a href="BookingRequest.HTML">Booking Requests</a>
-            <a href="Statistics.HTML">User Statistics</a>
-            <a href="ResourceSearch.HTML">Resource Browser</a>
-            <input class="left" type="search" searchbar="Browse Resources">
-            <a href="ResourceSearch.HTML">
-                <button class="button">Search</button>
-            </a>
-            <button class="left">Login</button>
+<!-- Header -->
+<header class="site-header">
+    <div class="wrap header-row">
+        <a href="index.html" class="logo">
+            <img src="assets/logo-concordia.svg" alt="Logo">
+        </a>
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="BrowseResources.html">Resources</a>
+            <a href="BookingDashboard.html">Bookings</a>
+            <a class="active" href="AdminDashboard.html">Admin</a>
+            <div class="nav-more">
+                <button class="nav-more-btn" type="button">More</button>
+                <div class="nav-more-menu">
+                    <a href="ResourceSearch.html">Search</a>
+                    <a href="ManageResources.html">Manage Resources</a>
+                    <a href="Statistics.html">Statistics</a>
+                    <a href="calendar.html">Calendar</a>
+                    <a href="CopyAdmin.html">Copy Admin</a>
+                    <a href="about.html">About</a>
+                    <a href="login.html">Login / Signup</a>
+                </div>
+            </div>
         </nav>
-    </header>
-    <div>
-        <!--Printing generic text for the Admin Dahsboard-->
-        <h1 class="title">Admin Dashboard</h1>
-        <p>Manage campus resources efficiently with comprehensive tracking and booking controls</p>
+        <div class="header-cta"><a class="btn-pill" href="login.html">Login</a></div>
     </div>
+</header>
 
-    <!--Buttons that link to other pages-->
-    <div>
-        <h2 class="title">Admin Resources</h2>
-        <a href="BookingRequest.HTML">
-            <button>Booking Requests ></button>
-        </a>
-        <a href="ManageResources.HTML">
-            <button>Manage All Resources ></button>
-        </a>
-        <a href="Statistics.HTML">
-            <button>Resource Statistics ></button>
-        </a>
-    </div>
+<main>
+    <section class="section wrap">
+        <h1 class="section-title">Admin dashboard</h1>
+        <p class="section-sub">Manage resources and monitor system activity.</p>
 
-    <h2 class="titletwo">Manage Resources</h2>
-    <div class="resource-display-container">
-        <div class="resource-display-box-bold">
-            <p>Resource</p>
-            <p>Capacity</p>
-            <p>Status</p>
-            <p>Type</p>
-            <p>Location</p>
-            <p>Action</p>
-        </div>
-        <div class="resource-display-box">
-            <p>Room 305</p>
-            <p>6</p>
-            <p>Available</p>
-            <p>Study Room</p>
-            <p>EV Building</p>
-            <button class="button">Edit</button>
-            <button class="button">Delete</button>
-        </div>
-        <div class="resource-display-box">
-            <p>Room L107</p>
-            <p>100</p>
-            <p>Available</p>
-            <p>Sports Court</p>
-            <p>Loyola</p>
-            <button class="button">Edit</button>
-            <button class="button">Delete</button>
-        </div>
-        <div class="resource-display-box">
-            <p>Room 916</p>
-            <p>32</p>
-            <p>Available</p>
-            <p>Computer Lab</p>
-            <p>Hall Building</p>
-            <button class="button">Edit</button>
-            <button class="button">Delete</button>
-        </div>
-    </div>
-
-
-    <div>
-        <h2 class="titletwo">System Overview</h2>
-        <p class="subtitle">Quick insights into total bookings, users, and resource availability</p>
-        <div class="grid-container">
-            <div class="box">
-                <h3>Total Bookings</h3>
-                <p>121</p>
-            </div>
-
-            <div class="box">
-                <h3>Active Users</h3>
-                <p>1209</p>
-            </div>
-
-            <div class="box">
-                <h3>Available Resources</h3>
-                <p>18</p>
-            </div>
-
-            <div class="box">
-                <h3>Under Maintenance</h3>
-                <p>2</p>
+        <!-- Resource overview -->
+        <div class="card">
+            <h2 class="h5">Resource overview</h2>
+            <div class="table-like">
+                <div class="t-row t-head">
+                    <div>Resource</div><div>Capacity</div><div>Status</div><div>Type</div><div>Location</div><div>Action</div>
+                </div>
+                <div class="t-row">
+                    <div>Study Room EV301</div><div>6</div><div>Open</div><div>Study Room</div><div>EV</div>
+                    <div class="t-actions">
+                        <a class="btn btn-primary" href="ManageResources.html">Edit</a>
+                        <button class="btn" onclick="alert('Removed')">Remove</button>
+                    </div>
+                </div>
+                <div class="t-row">
+                    <div>Computer Lab 916</div><div>32</div><div>Open</div><div>Computer Lab</div><div>Hall</div>
+                    <div class="t-actions">
+                        <a class="btn btn-primary" href="ManageResources.html">Edit</a>
+                        <button class="btn" onclick="alert('Removed')">Remove</button>
+                    </div>
+                </div>
+                <div class="t-row">
+                    <div>Sports Court L107</div><div>100</div><div>Open</div><div>Sports Court</div><div>Loyola</div>
+                    <div class="t-actions">
+                        <a class="btn btn-primary" href="ManageResources.html">Edit</a>
+                        <button class="btn" onclick="alert('Removed')">Remove</button>
+                    </div>
+                </div>
             </div>
         </div>
+
+        <!-- Quick actions -->
+        <div class="card">
+            <h2 class="h5">Quick actions</h2>
+            <div class="cards-3">
+                <article class="card">
+                    <div class="card-body">
+                        <div class="eyebrow">Requests</div>
+                        <h3>Booking Requests</h3>
+                        <p class="muted">Approve or reject pending bookings.</p>
+                        <a class="btn btn-primary" href="BookingRequest.html">Open</a>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-body">
+                        <div class="eyebrow">Resources</div>
+                        <h3>Manage Resources</h3>
+                        <p class="muted">Create, edit, block, or delete resources.</p>
+                        <a class="btn btn-primary" href="ManageResources.html">Open</a>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-body">
+                        <div class="eyebrow">Insights</div>
+                        <h3>Statistics</h3>
+                        <p class="muted">View usage metrics and trends.</p>
+                        <a class="btn btn-primary" href="Statistics.html">Open</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="divider"></div>
+        <div class="footer-bottom">
+            <div class="copyright">© 2024 University Resources</div>
+        </div>
     </div>
+</footer>
 </body>
-
-<footer></footer>
-
 </html>
