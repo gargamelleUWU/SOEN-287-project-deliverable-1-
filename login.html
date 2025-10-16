@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Login · University Resource Booking</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+    <div class="wrap header-row">
+        <a href="index.html" class="logo"><img src="assets/logo-concordia.svg" alt="Logo"></a>
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="BrowseResources.html">Resources</a>
+            <a href="BookingDashboard.html">Bookings</a>
+            <a href="AdminDashboard.html">Admin</a>
+            <div class="more">
+                <button class="more-btn" type="button">More</button>
+                <div class="more-menu">
+                    <a href="ResourceSearch.html">Search</a>
+                    <a href="ManageResources.html">Manage Resources</a>
+                    <a href="Statistics.html">Statistics</a>
+                    <a href="calendar.html">Calendar</a>
+                    <a href="CopyAdmin.html">Copy Admin</a>
+                    <a href="about.html">About</a>
+                    <a class="active" href="login.html">Login / Signup</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="section wrap" style="max-width:480px;">
+        <h1 class="section-title">Login</h1>
+        <p class="section-sub">Enter your credentials to access your dashboard.</p>
+
+        <div class="card">
+            <form class="field" onsubmit="return false;">
+                <div class="field">
+                    <label class="label">Email</label>
+                    <input class="input" type="email" placeholder="you@example.com" required />
+                </div>
+                <div class="field">
+                    <label class="label">Password</label>
+                    <input class="input" type="password" placeholder="••••••••" required />
+                </div>
+                <div class="actions" style="margin-top: 20px;">
+                    <button class="btn btn-primary" type="submit">Login</button>
+                    <a href="#" class="btn">Sign Up</a>
+                </div>
+            </form>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="divider"></div>
+        <div class="footer-bottom"><div class="copyright">© <span id="year"></span> University Resources</div></div>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Statistics · University Resource Booking</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <style>
+        /* lightweight inline chart styles that fit your design */
+        .stats-4 { display:grid; grid-template-columns: repeat(auto-fit, minmax(220px,1fr)); gap:16px; }
+        .stat { background: var(--chip, #f3f4f6); border:1px solid var(--line, #e5e7eb); border-radius:12px; padding:18px; text-align:center; }
+        .stat-title { font-weight:600; margin-bottom:6px; }
+        .stat-value { font-size:1.6rem; font-weight:800; }
+        .chart { margin-top:24px; }
+        .bar { background: var(--text,#111827); color:#fff; border-radius:6px; padding:6px 10px; margin:8px 0; font-size:.9rem; }
+    </style>
+</head>
+<body>
+<header class="site-header">
+    <div class="wrap header-row">
+        <a href="index.html" class="logo"><img src="assets/logo-concordia.svg" alt="Logo"></a>
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="BrowseResources.html">Resources</a>
+            <a href="BookingDashboard.html">Bookings</a>
+            <a href="AdminDashboard.html">Admin</a>
+            <div class="nav-more">
+                <button class="nav-more-btn" type="button">More</button>
+                <div class="nav-more-menu">
+                    <a href="ResourceSearch.html">Search</a>
+                    <a href="ManageResources.html">Manage Resources</a>
+                    <a class="active" href="Statistics.html">Statistics</a>
+                    <a href="calendar.html">Calendar</a>
+                    <a href="CopyAdmin.html">Copy Admin</a>
+                    <a href="about.html">About</a>
+                    <a href="login.html">Login / Signup</a>
+                </div>
+            </div>
+        </nav>
+        <div class="header-cta"><a class="btn-pill" href="login.html">Login</a></div>
+    </div>
+</header>
+
+<main>
+    <section class="section wrap" style="max-width:1000px;">
+        <h1 class="section-title">Usage statistics</h1>
+        <p class="section-sub">Quick overview of bookings, users, and resource activity.</p>
+
+        <div class="card">
+            <div class="stats-4">
+                <div class="stat"><div class="stat-title">Total Bookings</div><div class="stat-value">1,230</div></div>
+                <div class="stat"><div class="stat-title">Active Users</div><div class="stat-value">856</div></div>
+                <div class="stat"><div class="stat-title">Resources</div><div class="stat-value">42</div></div>
+                <div class="stat"><div class="stat-title">Avg. Daily</div><div class="stat-value">57</div></div>
+            </div>
+
+            <div class="chart">
+                <h2 class="h5">Monthly bookings</h2>
+                <div class="bar" style="width:80%;">Jan — 800</div>
+                <div class="bar" style="width:85%;">Feb — 850</div>
+                <div class="bar" style="width:95%;">Mar — 950</div>
+                <div class="bar" style="width:100%;">Apr — 1000</div>
+                <div class="bar" style="width:92%;">May — 920</div>
+                <div class="bar" style="width:88%;">Jun — 880</div>
+            </div>
+
+            <div class="chart">
+                <h2 class="h5">Top booked resources</h2>
+                <div class="bar" style="width:100%;">EV301 — 120</div>
+                <div class="bar" style="width:90%;">Lab 916 — 108</div>
+                <div class="bar" style="width:82%;">Court L107 — 98</div>
+                <div class="bar" style="width:75%;">EV310 — 90</div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="divider"></div>
+        <div class="footer-bottom"><div class="copyright">© 2024 University Resources</div></div>
+    </div>
+</footer>
+</body>
+</html>

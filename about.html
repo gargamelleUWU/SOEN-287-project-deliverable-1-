@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About · University Resource Booking</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+    <div class="wrap header-row">
+        <a href="index.html" class="logo"><img src="assets/logo-concordia.svg" alt="Logo"></a>
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="BrowseResources.html">Resources</a>
+            <a href="BookingDashboard.html">Bookings</a>
+            <a href="AdminDashboard.html">Admin</a>
+            <div class="more">
+                <button class="more-btn" type="button">More</button>
+                <div class="more-menu">
+                    <a href="ResourceSearch.html">Search</a>
+                    <a href="ManageResources.html">Manage Resources</a>
+                    <a href="Statistics.html">Statistics</a>
+                    <a href="calendar.html">Calendar</a>
+                    <a href="CopyAdmin.html">Copy Admin</a>
+                    <a class="active" href="about.html">About</a>
+                    <a href="login.html">Login / Signup</a>
+                </div>
+            </div>
+        </nav>
+        <div class="header-cta"><a class="btn-pill" href="login.html">Login</a></div>
+    </div>
+</header>
+
+<main>
+    <section class="section wrap" style="max-width:900px;">
+        <h1 class="section-title">About University Resource Booking</h1>
+        <p class="section-sub">Our mission is to make campus resource scheduling fast, simple, and accessible to everyone.</p>
+
+        <div class="card">
+            <p>
+                University Resource Booking is a collaborative project built to streamline the way students, faculty, and staff reserve
+                study rooms, computer labs, and recreational facilities. Our platform is designed with simplicity and usability at its core.
+            </p>
+            <p>
+                We believe that booking a space should take seconds — not hours — and that transparency and availability should always
+                be clear. Our system allows you to explore available spaces, check detailed information, and confirm reservations in just a few clicks.
+            </p>
+        </div>
+
+        <h2 class="section-title" style="margin-top:40px;">Meet the Team</h2>
+        <div class="team-grid" style="margin-top:20px;">
+            <div class="member">
+                <img src="assets/david.jpg" class="avatar" alt="David">
+                <div>
+                    <p class="name">David Kim</p>
+                    <p class="role">Frontend Developer</p>
+                    <p class="bio">Loves crafting intuitive interfaces and bringing designs to life with clean, accessible code.</p>
+                </div>
+            </div>
+            <div class="member">
+                <img src="assets/elena.jpg" class="avatar" alt="Elena">
+                <div>
+                    <p class="name">Elena Rossi</p>
+                    <p class="role">Backend Engineer</p>
+                    <p class="bio">Specializes in server logic and database design, ensuring speed and reliability for the platform.</p>
+                </div>
+            </div>
+            <div class="member">
+                <img src="assets/sarah.jpg" class="avatar" alt="Sarah">
+                <div>
+                    <p class="name">Sarah Lee</p>
+                    <p class="role">Project Lead</p>
+                    <p class="bio">Coordinates development efforts, manages timelines, and ensures the platform meets user needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="divider"></div>
+        <div class="footer-bottom"><div class="copyright">© <span id="year"></span> University Resources</div></div>
+    </div>
+</footer>
+</body>
+</html>
