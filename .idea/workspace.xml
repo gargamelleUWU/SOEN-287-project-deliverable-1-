@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29999d38-a5ce-4dc6-9f10-1482de8920b3" name="Changes" comment="work on it tmr">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Statistic.html" beforeDir="false" afterPath="$PROJECT_DIR$/Statistics.html" afterDir="false" />
-    </list>
+    <list default="true" id="29999d38-a5ce-4dc6-9f10-1482de8920b3" name="Changes" comment="it works... i just need to make the css work more but it just doesnt want to. AI is making it way worse too" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,6 +20,19 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="Testing-everything-together" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="Resource-Details-Page" />
@@ -128,7 +137,7 @@
       <updated>1760550487427</updated>
       <workItem from="1760550488639" duration="18485000" />
       <workItem from="1760631255555" duration="644000" />
-      <workItem from="1760633245250" duration="12902000" />
+      <workItem from="1760633245250" duration="13218000" />
     </task>
     <task id="LOCAL-00001" summary="reorganize">
       <option name="closed" value="true" />
@@ -186,7 +195,23 @@
       <option name="project" value="LOCAL" />
       <updated>1760586745189</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="it works... i just need to make the css work more but it just doesnt want to. AI is making it way worse too">
+      <option name="closed" value="true" />
+      <created>1760746971808</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1760746971808</updated>
+    </task>
+    <task id="LOCAL-00009" summary="it works... i just need to make the css work more but it just doesnt want to. AI is making it way worse too">
+      <option name="closed" value="true" />
+      <created>1760746987337</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1760746987337</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -197,7 +222,8 @@
     <MESSAGE value="Added Eldar's Part" />
     <MESSAGE value="- organised layout for contribution&#10;- made a js folder for future use&#10;- combined css files from eldar and felix&#10;- made directories for everyone's Parts.md&#10;- uploaded all the photos abdul sent when giving the prototype in the images directory&#10;&#10;Everything should share the same CSS file" />
     <MESSAGE value="work on it tmr" />
-    <option name="LAST_COMMIT_MESSAGE" value="work on it tmr" />
+    <MESSAGE value="it works... i just need to make the css work more but it just doesnt want to. AI is making it way worse too" />
+    <option name="LAST_COMMIT_MESSAGE" value="it works... i just need to make the css work more but it just doesnt want to. AI is making it way worse too" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
