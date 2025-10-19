@@ -4,7 +4,37 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29999d38-a5ce-4dc6-9f10-1482de8920b3" name="Changes" comment="it works... i just need to make the css work more but it just doesnt want to. AI is making it way worse too" />
+    <list default="true" id="29999d38-a5ce-4dc6-9f10-1482de8920b3" name="Changes" comment="it works... i just need to make the css work more but it just doesnt want to. AI is making it way worse too">
+      <change afterPath="$PROJECT_DIR$/booking-dashboard.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/booking-request.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/contact.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/error.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/help.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/profile.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource-details.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/signup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdminDashboard.HTML" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookingDashboard.HTML" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookingRequest.HTML" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BrowseResources.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CopyAdmin.HTML" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ManageResources.HTML" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResourceDetails.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResourceSearch.HTML" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Statistics.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/hero-office.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/hero.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/logo-concordia.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/university_study_room_.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/room.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calendar.html" beforeDir="false" afterPath="$PROJECT_DIR$/calendar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -67,6 +97,7 @@
   "keyToString": {
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "DefaultHtmlFileTemplate": "HTML File",
+    "JavaScript Debug.index.html.executor": "Run",
     "JavaScript Debug.login.html.executor": "Debug",
     "JavaScript Debug.signup.html.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
@@ -83,7 +114,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "configurable.group.appearance",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "to.speed.mode.migration.done": "true",
     "vue.rearranger.settings.migration": "true"
   },
@@ -106,15 +137,28 @@
       <recent name="$PROJECT_DIR$/docs" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.login.html">
+  <component name="RunManager" selected="JavaScript Debug.index.html">
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/SOEN-287-project-deliverable-1-/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <configuration name="login.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/SOEN-287-project-deliverable-1-/login.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="signup.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/SOEN-287-project-deliverable-1-/signup.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.index.html" />
         <item itemvalue="JavaScript Debug.login.html" />
         <item itemvalue="JavaScript Debug.signup.html" />
       </list>

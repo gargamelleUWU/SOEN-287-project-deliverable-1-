@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Calendar</title>
+  <title>Manage</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -18,7 +18,7 @@
           <a href="index.html">Home</a>
           <a href="resources.html">Resources</a>
           <a href="booking-dashboard.html">Bookings</a>
-          <a href="manage.html">Admin</a>
+          <a href="manage.html" class="active">Admin</a>
           <div class="more">
             <button class="more-btn" type="button" aria-haspopup="true" aria-expanded="false">More ▾</button>
             <div class="more-menu" role="menu">
@@ -38,12 +38,17 @@
   </header>
   <main class="container page">
     <section class="title-block">
-      <div class="eyebrow">Calendar</div>
-      <h1>Booking Calendar</h1>
-      <p class="muted">View campus availability.</p>
+      <div class="eyebrow">Admin</div>
+      <h1>Manage Resources</h1>
+      <p class="muted">Add, edit, and remove resources.</p>
     </section>
-    <section class="card" style="padding:12px;">
-      <iframe class="gmap" style="height:640px;" src="https://calendar.google.com/calendar/embed?src=en.canadian%23holiday%40group.v.calendar.google.com&ctz=America%2FToronto"></iframe>
+    <section class="card" style="padding:16px;">
+      <form class="grid3">
+        <div><label class="label">Name</label><input type="text" placeholder="EV301"></div>
+        <div><label class="label">Type</label><select><option>Study Room</option><option>Computer Lab</option><option>Sports Court</option></select></div>
+        <div><label class="label">Capacity</label><input type="text" placeholder="6"></div>
+      </form>
+      <div class="form-actions"><button class="btn primary">Save</button><button class="btn">Reset</button></div>
     </section>
   </main>
   <footer class="site-footer">

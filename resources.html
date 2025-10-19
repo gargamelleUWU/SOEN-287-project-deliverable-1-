@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Calendar</title>
+  <title>Resources</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -16,7 +16,7 @@
       </div>
       <nav class="nav" aria-label="Primary">
           <a href="index.html">Home</a>
-          <a href="resources.html">Resources</a>
+          <a href="resources.html" class="active">Resources</a>
           <a href="booking-dashboard.html">Bookings</a>
           <a href="manage.html">Admin</a>
           <div class="more">
@@ -38,14 +38,68 @@
   </header>
   <main class="container page">
     <section class="title-block">
-      <div class="eyebrow">Calendar</div>
-      <h1>Booking Calendar</h1>
-      <p class="muted">View campus availability.</p>
+      <div class="eyebrow">Resources</div>
+      <h1>Browse Resources</h1>
+      <p class="muted">Filter by type and view details.</p>
     </section>
-    <section class="card" style="padding:12px;">
-      <iframe class="gmap" style="height:640px;" src="https://calendar.google.com/calendar/embed?src=en.canadian%23holiday%40group.v.calendar.google.com&ctz=America%2FToronto"></iframe>
+    <section class="card" style="padding:16px;">
+      <form class="grid3" onsubmit="event.preventDefault();filterCards();">
+        <div><label class="label">Type</label><select id="fType"><option value="">Any</option><option>Study Room</option><option>Computer Lab</option><option>Sports Court</option></select></div>
+        <div><label class="label">Start</label><input type="time" id="fStart"></div>
+        <div><label class="label">Date</label><input type="date" id="fDate"></div>
+      </form>
+    </section>
+    <section class="grid3" id="cardsWrap" style="margin-top:12px;">
+      <article class="card" data-type="Study Room" style="padding:0;">
+        <img src="../../Downloads/unified_site/assets/room.jpg" alt="Study Room EV301">
+        <div style="padding:12px;">
+          <div class="muted tiny">Study Room</div>
+          <h3>Study Room EV301</h3>
+          <p class="muted">EV Building · Capacity 6 · Whiteboard</p>
+          <div class="cta-row">
+            <a class="btn primary" href="index.html">Book</a>
+            <a class="btn" href="resource-details.html">Details</a>
+          </div>
+        </div>
+      </article>
+      <article class="card" data-type="Computer Lab" style="padding:0;">
+        <img src="../../Downloads/unified_site/assets/lab.jpg" alt="Computer Lab 916">
+        <div style="padding:12px;">
+          <div class="muted tiny">Computer Lab</div>
+          <h3>Computer Lab 916</h3>
+          <p class="muted">Hall Building · Capacity 32</p>
+          <div class="cta-row">
+            <a class="btn primary" href="index.html">Book</a>
+            <a class="btn" href="resource-details.html">Details</a>
+          </div>
+        </div>
+      </article>
+      <article class="card" data-type="Sports Court" style="padding:0;">
+        <img src="../../Downloads/unified_site/assets/court.jpg" alt="Court L107">
+        <div style="padding:12px;">
+          <div class="muted tiny">Sports Court</div>
+          <h3>Sports Court L107</h3>
+          <p class="muted">Loyola · Gym court</p>
+          <div class="cta-row">
+            <a class="btn primary" href="index.html">Book</a>
+            <a class="btn" href="resource-details.html">Details</a>
+          </div>
+        </div>
+      </article>
     </section>
   </main>
+  <script>
+    function filterCards(){
+      const type = (document.getElementById('fType').value||'').toLowerCase();
+      const cards = Array.from(document.querySelectorAll('#cardsWrap .card'));
+      cards.forEach(c=>{
+        const t = (c.getAttribute('data-type')||'').toLowerCase();
+        const match = !type || t.includes(type);
+        c.style.display = match ? '' : 'none';
+      });
+    }
+    filterCards();
+  </script>
   <footer class="site-footer">
     <div class="container">
       <div class="footer-top">

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Calendar</title>
+  <title>Contact</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -38,12 +38,22 @@
   </header>
   <main class="container page">
     <section class="title-block">
-      <div class="eyebrow">Calendar</div>
-      <h1>Booking Calendar</h1>
-      <p class="muted">View campus availability.</p>
+      <div class="eyebrow">Support</div>
+      <h1>Contact</h1>
+      <p class="muted">We typically reply within 24 hours.</p>
     </section>
-    <section class="card" style="padding:12px;">
-      <iframe class="gmap" style="height:640px;" src="https://calendar.google.com/calendar/embed?src=en.canadian%23holiday%40group.v.calendar.google.com&ctz=America%2FToronto"></iframe>
+    <section class="support-grid">
+      <div class="card">
+        <ul class="contact">
+          <li><div class="ico">✉️</div><div><div class="label">Email</div><a href="mailto:support@zepa.edu">support@zepa.edu</a></div></li>
+          <li><div class="ico">☎️</div><div><div class="label">Phone</div><a href="tel:+15145550147">+1 (514) 555‑0147</a></div></li>
+          <li><div class="ico">🌍</div><div><div class="label">Address</div><a class="address" target="_blank" rel="noopener" href="https://www.google.com/maps?q=Concordia+University,+1455+De+Maisonneuve+Blvd+W,+Montreal">Concordia University — Sir George Williams Campus</a></div></li>
+        </ul>
+      </div>
+      <figure class="card map">
+        <iframe class="gmap" src="https://www.google.com/maps?q=Concordia+University,+1455+De+Maisonneuve+Blvd+W,+Montreal&hl=en&z=15&output=embed" loading="lazy"></iframe>
+        <a class="map-link" target="_blank" rel="noopener" href="https://www.google.com/maps?q=Concordia+University,+1455+De+Maisonneuve+Blvd+W,+Montreal">Open in Google Maps →</a>
+      </figure>
     </section>
   </main>
   <footer class="site-footer">

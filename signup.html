@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Calendar</title>
+  <title>Signup</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -38,12 +38,19 @@
   </header>
   <main class="container page">
     <section class="title-block">
-      <div class="eyebrow">Calendar</div>
-      <h1>Booking Calendar</h1>
-      <p class="muted">View campus availability.</p>
+      <div class="eyebrow">Access</div>
+      <h1>Create your account</h1>
+      <p class="muted">Register to access university resources.</p>
     </section>
-    <section class="card" style="padding:12px;">
-      <iframe class="gmap" style="height:640px;" src="https://calendar.google.com/calendar/embed?src=en.canadian%23holiday%40group.v.calendar.google.com&ctz=America%2FToronto"></iframe>
+    <section class="card" style="padding:16px; max-width:480px; margin:0 auto;">
+      <form class="grid2">
+        <div style="grid-column:1/-1;"><label class="label">Full name</label><input type="text" placeholder="Jane Doe" required></div>
+        <div style="grid-column:1/-1;"><label class="label">Email</label><input type="email" placeholder="name@university.edu" required></div>
+        <div><label class="label">Password</label><input type="password" placeholder="At least 8 characters" required></div>
+        <div><label class="label">Confirm</label><input type="password" placeholder="Repeat password" required></div>
+        <div style="grid-column:1/-1;" class="form-actions"><button class="btn primary">Create account</button></div>
+      </form>
+      <p class="muted tiny" style="text-align:center;">Already have an account? <a href="login.html">Log in</a></p>
     </section>
   </main>
   <footer class="site-footer">

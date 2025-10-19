@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Calendar</title>
+  <title>Booking Dashboard</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -17,7 +17,7 @@
       <nav class="nav" aria-label="Primary">
           <a href="index.html">Home</a>
           <a href="resources.html">Resources</a>
-          <a href="booking-dashboard.html">Bookings</a>
+          <a href="booking-dashboard.html" class="active">Bookings</a>
           <a href="manage.html">Admin</a>
           <div class="more">
             <button class="more-btn" type="button" aria-haspopup="true" aria-expanded="false">More ▾</button>
@@ -38,12 +38,29 @@
   </header>
   <main class="container page">
     <section class="title-block">
-      <div class="eyebrow">Calendar</div>
-      <h1>Booking Calendar</h1>
-      <p class="muted">View campus availability.</p>
+      <div class="eyebrow">Bookings</div>
+      <h1>My Bookings</h1>
+      <p class="muted">Review your upcoming and past reservations.</p>
     </section>
-    <section class="card" style="padding:12px;">
-      <iframe class="gmap" style="height:640px;" src="https://calendar.google.com/calendar/embed?src=en.canadian%23holiday%40group.v.calendar.google.com&ctz=America%2FToronto"></iframe>
+    <section class="card" style="padding:0;">
+      <div style="padding:16px;"><h3>Active</h3></div>
+      <div style="border-top:1px solid var(--line); padding:16px;">
+        <div class="grid3">
+          <div><strong>Study Room EV301</strong><br><span class="muted tiny">Oct 20, 10:00–11:00 · Confirmed</span></div>
+          <div><span class="muted">EV Building</span></div>
+          <div class="cta-row" style="justify-content:flex-end;">
+            <a class="btn primary" href="#">Edit</a>
+            <a class="btn" href="#">Cancel</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="card" style="padding:16px; margin-top:12px;">
+      <h3>Past</h3>
+      <ul>
+        <li>Study Room 223 — Oct 5 · 8–10 PM</li>
+        <li>Computer Lab 916 — Oct 7 · 8–10 PM</li>
+      </ul>
     </section>
   </main>
   <footer class="site-footer">
