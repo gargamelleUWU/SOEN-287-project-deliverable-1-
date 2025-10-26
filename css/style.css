@@ -1,4 +1,4 @@
-/* Unified site styles (based on Abdul's CSS) */
+/* CSS used for all the pages */
 :root {
   --bg: #f2f3f4;
   --text: #1f2937;
@@ -155,7 +155,13 @@ body {
 
 .title-block {
   text-align: center;
-  padding: 16px 0 24px;
+
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 26px 24px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, .06);
+  margin-bottom: 24px;
 }
 
 .title-block .eyebrow {
@@ -582,4 +588,53 @@ select {
   .site-footer .links-grid {
     grid-template-columns: 1fr;
   }
+}
+
+body.page-main {
+  background-image: url('../assets/concordia-cover.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+body.page-browse {
+  background-image: url('../assets/browse.webp');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+body.page-bdashboard {
+  background-image: url('../assets/bookings.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+body.page-details {
+  background-image: url('../assets/home-background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+body.page-about {
+  background-image: url('../assets/about.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+body.page-contact {
+  background-image: url('../assets/contact.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+body.page-help {
+  background-image: url('../assets/computer\ lab.webp');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
