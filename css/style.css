@@ -292,6 +292,12 @@ body {
   border-radius: 12px;
 }
 
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .s {
   padding: 16px;
   background: #fff;
