@@ -13,33 +13,37 @@
   <header class="topbar">
     <div class="container topbar-row">
       <div class="brand">
-        <a href="index.html" aria-label="Logo"><img class="brand-logo"
-            src="../../Downloads/unified_site/assets/logo.svg" alt="Logo"
-            onerror="this.replaceWith(document.createTextNode('Campus'))"></a>
+        <a href="index.html" aria-label="Logo"><img class="brand-logo" src="../assets/concordia-logo-icon.png"
+            alt="Logo" onerror="this.replaceWith(document.createTextNode('Campus'))"></a>
         <div class="brand-logo-text">Campus</div>
       </div>
       <nav class="nav" aria-label="Primary">
-        <a href="index.html">Home</a>
+        <a href="index.html" class="active">Home</a>
         <a href="resources.html">Resources</a>
-        <a href="booking-dashboard.html" class="active">Bookings</a>
-        <a href="manage.html">Admin</a>
+        <a href="booking-dashboard.html">Bookings</a>
+        <a href="resource-details.html">Resource Details</a>
+
         <div class="more">
           <button class="more-btn" type="button" aria-haspopup="true" aria-expanded="false">More ▾</button>
           <div class="more-menu" role="menu">
-            <a href="resource-details.html">Resource Details</a>
-            <a href="booking-request.html">Booking Requests</a>
             <a href="calendar.html">Calendar</a>
             <a href="about.html">About</a>
-            <a href="login.html">Login / Signup</a>
             <a href="contact.html">Contact</a>
             <a href="help.html">Help / FAQ</a>
-            <a href="profile.html">Profile</a>
+            <a href="manage.html">Admin</a>
+            <a href="booking-request.html">Booking Requests</a>
+            <a href="admin-availability.html">Availability</a>
+            <a href="admin-statistics.html">Statistics</a>
           </div>
         </div>
       </nav>
-      <a class="btn-pill" href="login.html">Login</a>
+      <div>
+        <a class="btn-pill" href="login.html">Login</a>
+        <a class="btn-pill" href="profile.html">Profile</a>
+      </div>
     </div>
   </header>
+
   <main class="container page">
     <section class="title-block">
       <div class="eyebrow">Bookings</div>
