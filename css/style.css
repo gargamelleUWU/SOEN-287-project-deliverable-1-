@@ -638,3 +638,18 @@ body.page-help {
   background-position: center;
   background-attachment: fixed;
 }
+
+/* Stick footer to the bottom */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+.site-footer {
+    margin-top: auto;
+}

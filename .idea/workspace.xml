@@ -5,35 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="29999d38-a5ce-4dc6-9f10-1482de8920b3" name="Changes" comment="it works... i just need to make the css work more but it just doesnt want to. AI is making it way worse too">
-      <change afterPath="$PROJECT_DIR$/booking-dashboard.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/booking-request.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/contact.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/error.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/help.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/profile.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource-details.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/signup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2025-10-15,_8_02 p_m__[Changes]1/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2025-10-15__8_02p_m___Changes_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2025-10-19,_6_40 p_m__[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2025-10-19,_6_47 p_m__[Changes]1/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2025-10-19__6_40p_m___Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2025-10-19__6_47p_m___Changes_1.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdminDashboard.HTML" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookingDashboard.HTML" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookingRequest.HTML" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BrowseResources.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CopyAdmin.HTML" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ManageResources.HTML" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResourceDetails.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResourceSearch.HTML" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Statistics.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/hero-office.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/hero.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/logo-concordia.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/logo.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/university_study_room_.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/room.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/calendar.html" beforeDir="false" afterPath="$PROJECT_DIR$/calendar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +43,7 @@
     </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Resource-Details-Page" />
+        <entry key="$PROJECT_DIR$" value="main-to-be" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -93,45 +71,45 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "JavaScript Debug.index.html.executor": "Run",
-    "JavaScript Debug.login.html.executor": "Debug",
-    "JavaScript Debug.signup.html.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "junie.onboarding.icon.badge.shown": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/marcmicheal/IdeaProjects/SOEN-287-project-deliverable-1-",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "to.speed.mode.migration.done": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;JavaScript Debug.index.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.login.html.executor&quot;: &quot;Debug&quot;,
+    &quot;JavaScript Debug.signup.html.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/marcmicheal/IdeaProjects/SOEN-287-project-deliverable-1-&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
-      "Markdown",
-      "PLAIN_TEXT"
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;Markdown&quot;,
+      &quot;PLAIN_TEXT&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/assets" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/.idea/eldar" />
       <recent name="$PROJECT_DIR$/.idea/images" />
       <recent name="$PROJECT_DIR$/docs" />
@@ -159,8 +137,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JavaScript Debug.index.html" />
-        <item itemvalue="JavaScript Debug.login.html" />
         <item itemvalue="JavaScript Debug.signup.html" />
+        <item itemvalue="JavaScript Debug.login.html" />
+        <item itemvalue="JavaScript Debug.index.html" />
+        <item itemvalue="JavaScript Debug.login.html" />
       </list>
     </recent_temporary>
   </component>
@@ -182,6 +162,10 @@
       <workItem from="1760550488639" duration="18485000" />
       <workItem from="1760631255555" duration="644000" />
       <workItem from="1760633245250" duration="13218000" />
+      <workItem from="1761426112883" duration="1870000" />
+      <workItem from="1761429069314" duration="4094000" />
+      <workItem from="1761605727900" duration="190000" />
+      <workItem from="1761606002809" duration="516000" />
     </task>
     <task id="LOCAL-00001" summary="reorganize">
       <option name="closed" value="true" />
@@ -255,11 +239,30 @@
       <option name="project" value="LOCAL" />
       <updated>1760746987337</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="it works... i just need to make the css work more but it just doesnt want to. AI is making it way worse too">
+      <option name="closed" value="true" />
+      <created>1760917690986</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1760917690986</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="reorganize" />
