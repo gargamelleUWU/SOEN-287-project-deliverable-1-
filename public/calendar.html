@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Calendar</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="page-calendar">
+  <header class="topbar">
+    <div class="container topbar-row">
+      <div class="brand">
+        <a href="index.html" aria-label="Logo">
+          <img class="brand-logo" src="../assets/concordia-logo-icon.png"
+               alt="Logo"
+               onerror="this.replaceWith(document.createTextNode('Campus'))">
+        </a>
+        <div class="brand-logo-text">Bookings</div>
+      </div>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="resources.html">Resources</a>
+        <a href="booking-dashboard.html">Bookings</a>
+        <a href="resource-details.html">Resource Details</a>
+
+        <div class="more">
+          <button class="more-btn" type="button" aria-haspopup="true" aria-expanded="false">More ▾</button>
+          <div class="more-menu" role="menu">
+            <a href="calendar.html" class="active">Calendar</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="help.html">Help / FAQ</a>
+            <a href="manage.html">Admin</a>
+            <a href="booking-request.html">Booking Requests</a>
+            <a href="admin-availability.html">Availability</a>
+            <a href="admin-statistics.html">Statistics</a>
+          </div>
+        </div>
+      </nav>
+      <div>
+        <a class="btn-pill" href="login.html">Login</a>
+        <a class="btn-pill" href="profile.html">Profile</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container page">
+    <section class="title-block">
+      <div class="eyebrow">Calendar</div>
+      <h1>Booking Calendar</h1>
+      <p class="muted">Select a day to see available time slots based on your current bookings.</p>
+    </section>
+
+    <!-- Calendar + time slots widget -->
+    <section class="card" style="padding:16px; margin-top:12px;">
+      <div id="availability-widget">
+        <!-- Month header -->
+        <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:16px;">
+          <button id="cal-prev"
+                  type="button"
+                  style="border:1px solid var(--line); background:white; border-radius:999px; padding:4px 10px; cursor:pointer;">
+            ‹
+          </button>
+          <div id="cal-month-label" style="font-weight:600;">Month Year</div>
+          <button id="cal-next"
+                  type="button"
+                  style="border:1px solid var(--line); background:white; border-radius:999px; padding:4px 10px; cursor:pointer;">
+            ›
+          </button>
+        </div>
+
+        <!-- Day names -->
+        <div style="display:grid; grid-template-columns:repeat(7,1fr); font-size:12px; text-align:center; margin-bottom:4px; color:var(--muted,#6b7280);">
+          <div>Sun</div>
+          <div>Mon</div>
+          <div>Tue</div>
+          <div>Wed</div>
+          <div>Thu</div>
+          <div>Fri</div>
+          <div>Sat</div>
+        </div>
+
+        <!-- Calendar grid (days) -->
+        <div id="cal-grid"
+             style="display:grid; grid-template-columns:repeat(7,1fr); gap:4px; margin-bottom:16px;">
+          <!-- JS will create the day buttons -->
+        </div>
+      </div>
+
+      <!-- Selected date label -->
+      <div id="selected-date-label"
+           class="muted"
+           style="margin-bottom:8px; font-size:14px;">
+        Select a day to see available times.
+      </div>
+
+      <!-- Time slots -->
+      <div id="time-slots">
+        <!-- JS will create morning / afternoon groups -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="col brand-col">
+          <div class="brand">
+            <a href="index.html" aria-label="Logo">
+              <img class="brand-logo" src="logo.svg" alt="Logo"
+                   onerror="this.replaceWith(document.createTextNode('Campus'))">
+            </a>
+          </div>
+          <div class="block">
+            <h4>Address</h4>
+            <p>Campus Resource Management Center<br>1455 De Maisonneuve Blvd W, Montreal, QC, Canada</p>
+          </div>
+          <div class="block">
+            <h4>Contact</h4>
+            <p>1-800-412-4322<br>resource.booking@concordia.edu</p>
+          </div>
+        </div>
+        <div class="col links-col">
+          <div class="links-grid">
+            <div class="links-group">
+              <h4>Quick links</h4>
+              <ul>
+                <li><a href="resources.html">Browse resources</a></li>
+                <li><a href="booking-dashboard.html">My bookings</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="calendar.html">Calendar</a></li>
+              </ul>
+            </div>
+            <div class="links-group">
+              <h4>Support</h4>
+              <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="help.html">Help / FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="divider"></div>
+      <div class="footer-bottom">
+        <div class="copyright">© <span id="year"></span> Campus Resource Booking</div>
+        <ul class="policy-links">
+          <li><a href="#">Privacy policy</a></li>
+          <li><a href="#">Terms of service</a></li>
+          <li><a href="#">Cookie preferences</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/index.js"></script>
+</body>
+
+</html>
