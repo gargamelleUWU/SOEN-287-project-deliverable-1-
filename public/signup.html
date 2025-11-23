@@ -4,12 +4,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Help</title>
+  <title>Signup</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
-<body class="page-help">
+<body>
   <header class="topbar">
     <div class="container topbar-row">
       <div class="brand">
@@ -46,29 +46,27 @@
 
   <main class="container page">
     <section class="title-block">
-      <div class="eyebrow">Help</div>
-      <h1>Help & FAQ</h1>
-      <p class="muted">Common questions about booking resources.</p>
+      <div class="eyebrow">Access</div>
+      <h1>Create your account</h1>
+      <p class="muted">Register to access university resources.</p>
     </section>
-    <section class="card" style="padding:16px;">
-      <details>
-        <summary><strong>How do I book a room?</strong></summary>
-        <p>Go to Home → fill the booking form → submit.</p>
-      </details>
-      <details>
-        <summary><strong>Can I cancel a booking?</strong></summary>
-        <p>Yes. Visit My Bookings and click Cancel.</p>
-      </details>
-      <details>
-        <summary><strong>Why can’t I see some resources?</strong></summary>
-        <p>They may be restricted to faculty or departments.</p>
-      </details>
+    <section class="card" style="padding:16px; max-width:480px; margin:0 auto;">
+      <form class="grid2">
+        <div style="grid-column:1/-1;"><label class="label">Full name</label><input type="text" placeholder="Jane Doe"
+            required></div>
+        <div style="grid-column:1/-1;"><label class="label">Email</label><input type="email"
+            placeholder="name@university.edu" required></div>
+        <div><label class="label">Password</label><input type="password" placeholder="At least 8 characters" required>
+        </div>
+        <div><label class="label">Confirm</label><input type="password" placeholder="Repeat password" required></div>
+        <div style="grid-column:1/-1;" class="form-actions"><button class="btn primary">Create account</button></div>
+      </form>
+      <p class="muted tiny" style="text-align:center;">Already have an account? <a href="login.html">Log in</a></p>
     </section>
   </main>
-
   <footer class="site-footer">
     <div class="container">
-      <div class>
+      <div class="footer-top">
         <div class="col brand-col">
           <div class="brand">
             <a href="index.html" aria-label="Logo"><img class="brand-logo" src="assets/logo.svg" alt="Logo"

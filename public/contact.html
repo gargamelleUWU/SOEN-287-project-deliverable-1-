@@ -4,12 +4,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Help</title>
+  <title>Contact</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
-<body class="page-help">
+<body class="page-contact">
   <header class="topbar">
     <div class="container topbar-row">
       <div class="brand">
@@ -46,29 +46,48 @@
 
   <main class="container page">
     <section class="title-block">
-      <div class="eyebrow">Help</div>
-      <h1>Help & FAQ</h1>
-      <p class="muted">Common questions about booking resources.</p>
+      <div class="eyebrow">Support</div>
+      <h1>Contact</h1>
+      <p class="muted">We typically reply within 24 hours.</p>
     </section>
-    <section class="card" style="padding:16px;">
-      <details>
-        <summary><strong>How do I book a room?</strong></summary>
-        <p>Go to Home → fill the booking form → submit.</p>
-      </details>
-      <details>
-        <summary><strong>Can I cancel a booking?</strong></summary>
-        <p>Yes. Visit My Bookings and click Cancel.</p>
-      </details>
-      <details>
-        <summary><strong>Why can’t I see some resources?</strong></summary>
-        <p>They may be restricted to faculty or departments.</p>
-      </details>
+    <section class="support-grid">
+      <div class="card">
+        <ul class="contact">
+          <li>
+            <div class="ico">✉️</div>
+            <div>
+              <div class="label">Email</div><a href="mailto:support@zepa.edu">support@zepa.edu</a>
+            </div>
+          </li>
+          <li>
+            <div class="ico">☎️</div>
+            <div>
+              <div class="label">Phone</div><a href="tel:+15145550147">+1 (514) 555‑0147</a>
+            </div>
+          </li>
+          <li>
+            <div class="ico">🌍</div>
+            <div>
+              <div class="label">Address</div><a class="address" target="_blank" rel="noopener"
+                href="https://www.google.com/maps?q=Concordia+University,+1455+De+Maisonneuve+Blvd+W,+Montreal">Concordia
+                University — Sir George Williams Campus</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <figure class="card map">
+        <iframe class="gmap"
+          src="https://www.google.com/maps?q=Concordia+University,+1455+De+Maisonneuve+Blvd+W,+Montreal&hl=en&z=15&output=embed"
+          loading="lazy"></iframe>
+        <a class="map-link" target="_blank" rel="noopener"
+          href="https://www.google.com/maps?q=Concordia+University,+1455+De+Maisonneuve+Blvd+W,+Montreal">Open in Google
+          Maps →</a>
+      </figure>
     </section>
   </main>
-
   <footer class="site-footer">
     <div class="container">
-      <div class>
+      <div class="footer-top">
         <div class="col brand-col">
           <div class="brand">
             <a href="index.html" aria-label="Logo"><img class="brand-logo" src="assets/logo.svg" alt="Logo"

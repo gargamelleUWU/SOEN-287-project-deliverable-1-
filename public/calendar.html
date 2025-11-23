@@ -4,21 +4,24 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Help</title>
+  <title>Calendar</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
-<body class="page-help">
+<body class="page-calendar">
   <header class="topbar">
     <div class="container topbar-row">
       <div class="brand">
-        <a href="index.html" aria-label="Logo"><img class="brand-logo" src="../assets/concordia-logo-icon.png"
-            alt="Logo" onerror="this.replaceWith(document.createTextNode('Campus'))"></a>
+        <a href="index.html" aria-label="Logo">
+          <img class="brand-logo" src="../assets/concordia-logo-icon.png"
+               alt="Logo"
+               onerror="this.replaceWith(document.createTextNode('Campus'))">
+        </a>
         <div class="brand-logo-text">Bookings</div>
       </div>
       <nav class="nav" aria-label="Primary">
-        <a href="index.html" class="active">Home</a>
+        <a href="index.html">Home</a>
         <a href="resources.html">Resources</a>
         <a href="booking-dashboard.html">Bookings</a>
         <a href="resource-details.html">Resource Details</a>
@@ -26,7 +29,7 @@
         <div class="more">
           <button class="more-btn" type="button" aria-haspopup="true" aria-expanded="false">More ▾</button>
           <div class="more-menu" role="menu">
-            <a href="calendar.html">Calendar</a>
+            <a href="calendar.html" class="active">Calendar</a>
             <a href="about.html">About</a>
             <a href="contact.html">Contact</a>
             <a href="help.html">Help / FAQ</a>
@@ -46,33 +49,70 @@
 
   <main class="container page">
     <section class="title-block">
-      <div class="eyebrow">Help</div>
-      <h1>Help & FAQ</h1>
-      <p class="muted">Common questions about booking resources.</p>
+      <div class="eyebrow">Calendar</div>
+      <h1>Booking Calendar</h1>
+      <p class="muted">Select a day to see available time slots based on your current bookings.</p>
     </section>
-    <section class="card" style="padding:16px;">
-      <details>
-        <summary><strong>How do I book a room?</strong></summary>
-        <p>Go to Home → fill the booking form → submit.</p>
-      </details>
-      <details>
-        <summary><strong>Can I cancel a booking?</strong></summary>
-        <p>Yes. Visit My Bookings and click Cancel.</p>
-      </details>
-      <details>
-        <summary><strong>Why can’t I see some resources?</strong></summary>
-        <p>They may be restricted to faculty or departments.</p>
-      </details>
+
+    <!-- Calendar + time slots widget -->
+    <section class="card" style="padding:16px; margin-top:12px;">
+      <div id="availability-widget">
+        <!-- Month header -->
+        <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:16px;">
+          <button id="cal-prev"
+                  type="button"
+                  style="border:1px solid var(--line); background:white; border-radius:999px; padding:4px 10px; cursor:pointer;">
+            ‹
+          </button>
+          <div id="cal-month-label" style="font-weight:600;">Month Year</div>
+          <button id="cal-next"
+                  type="button"
+                  style="border:1px solid var(--line); background:white; border-radius:999px; padding:4px 10px; cursor:pointer;">
+            ›
+          </button>
+        </div>
+
+        <!-- Day names -->
+        <div style="display:grid; grid-template-columns:repeat(7,1fr); font-size:12px; text-align:center; margin-bottom:4px; color:var(--muted,#6b7280);">
+          <div>Sun</div>
+          <div>Mon</div>
+          <div>Tue</div>
+          <div>Wed</div>
+          <div>Thu</div>
+          <div>Fri</div>
+          <div>Sat</div>
+        </div>
+
+        <!-- Calendar grid (days) -->
+        <div id="cal-grid"
+             style="display:grid; grid-template-columns:repeat(7,1fr); gap:4px; margin-bottom:16px;">
+          <!-- JS will create the day buttons -->
+        </div>
+      </div>
+
+      <!-- Selected date label -->
+      <div id="selected-date-label"
+           class="muted"
+           style="margin-bottom:8px; font-size:14px;">
+        Select a day to see available times.
+      </div>
+
+      <!-- Time slots -->
+      <div id="time-slots">
+        <!-- JS will create morning / afternoon groups -->
+      </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <div class>
+      <div class="footer-top">
         <div class="col brand-col">
           <div class="brand">
-            <a href="index.html" aria-label="Logo"><img class="brand-logo" src="assets/logo.svg" alt="Logo"
-                onerror="this.replaceWith(document.createTextNode('Campus'))"></a>
+            <a href="index.html" aria-label="Logo">
+              <img class="brand-logo" src="logo.svg" alt="Logo"
+                   onerror="this.replaceWith(document.createTextNode('Campus'))">
+            </a>
           </div>
           <div class="block">
             <h4>Address</h4>
@@ -116,7 +156,8 @@
       </div>
     </div>
   </footer>
-  <script src="js/script.js"></script>
+
+  <script src="js/index.js"></script>
 </body>
 
 </html>
