@@ -4,14 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29999d38-a5ce-4dc6-9f10-1482de8920b3" name="Changes" comment="it works... i just need to make the css work more but it just doesnt want to. AI is making it way worse too">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2025-10-15,_8_02 p_m__[Changes]1/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2025-10-15__8_02p_m___Changes_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2025-10-19,_6_40 p_m__[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2025-10-19,_6_47 p_m__[Changes]1/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2025-10-19__6_40p_m___Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2025-10-19__6_47p_m___Changes_1.xml" beforeDir="false" />
+    <list default="true" id="29999d38-a5ce-4dc6-9f10-1482de8920b3" name="Changes" comment="Adding Abduls part test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin-availability.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin-availability.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin-statistics.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin-statistics.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/booking-dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/booking-dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/booking-request.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/booking-request.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/calendar.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/calendar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/error.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/error.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/help.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/help.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/manage.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/manage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/resource-details.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/resource-details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/resources.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/resources.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/signup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +55,7 @@
     </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main-to-be" />
+        <entry key="$PROJECT_DIR$" value="Deliverable-2" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -61,7 +73,7 @@
   }
 }</component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="QODANA_PROBLEMS_VIEW_TAB" />
+    <option name="selectedTabId" value="AISelfReview" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
@@ -71,30 +83,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;JavaScript Debug.index.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.login.html.executor&quot;: &quot;Debug&quot;,
-    &quot;JavaScript Debug.signup.html.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/marcmicheal/IdeaProjects/SOEN-287-project-deliverable-1-&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "JavaScript Debug.index.html.executor": "Run",
+    "JavaScript Debug.login.html.executor": "Debug",
+    "JavaScript Debug.signup.html.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultAutoModeForALLUsers.v1": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "#4 on Deliverable-2",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/marcmicheal/IdeaProjects/SOEN-287-project-deliverable-1-",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "ml.llm.LLMConfigurable",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
   },
   &quot;keyToStringList&quot;: {
     &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
@@ -125,20 +139,11 @@
     <configuration name="signup.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/SOEN-287-project-deliverable-1-/signup.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <option name="filePath" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JavaScript Debug.index.html" />
         <item itemvalue="JavaScript Debug.signup.html" />
         <item itemvalue="JavaScript Debug.login.html" />
+        <item itemvalue="JavaScript Debug.index.html" />
         <item itemvalue="JavaScript Debug.index.html" />
         <item itemvalue="JavaScript Debug.login.html" />
       </list>
@@ -162,10 +167,9 @@
       <workItem from="1760550488639" duration="18485000" />
       <workItem from="1760631255555" duration="644000" />
       <workItem from="1760633245250" duration="13218000" />
-      <workItem from="1761426112883" duration="1870000" />
-      <workItem from="1761429069314" duration="4094000" />
-      <workItem from="1761605727900" duration="190000" />
-      <workItem from="1761606002809" duration="516000" />
+      <workItem from="1764039130471" duration="1601000" />
+      <workItem from="1764044499887" duration="1133000" />
+      <workItem from="1764046242293" duration="4724000" />
     </task>
     <task id="LOCAL-00001" summary="reorganize">
       <option name="closed" value="true" />
@@ -239,15 +243,23 @@
       <option name="project" value="LOCAL" />
       <updated>1760746987337</updated>
     </task>
-    <task id="LOCAL-00010" summary="it works... i just need to make the css work more but it just doesnt want to. AI is making it way worse too">
+    <task id="LOCAL-00010" summary="Adding Abduls part test">
       <option name="closed" value="true" />
-      <created>1760917690986</created>
+      <created>1764044753826</created>
       <option name="number" value="00010" />
       <option name="presentableId" value="LOCAL-00010" />
       <option name="project" value="LOCAL" />
-      <updated>1760917690986</updated>
+      <updated>1764044753826</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Adding Abduls part test">
+      <option name="closed" value="true" />
+      <created>1764044858949</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1764044858949</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,7 +282,8 @@
     <MESSAGE value="- organised layout for contribution&#10;- made a js folder for future use&#10;- combined css files from eldar and felix&#10;- made directories for everyone's Parts.md&#10;- uploaded all the photos abdul sent when giving the prototype in the images directory&#10;&#10;Everything should share the same CSS file" />
     <MESSAGE value="work on it tmr" />
     <MESSAGE value="it works... i just need to make the css work more but it just doesnt want to. AI is making it way worse too" />
-    <option name="LAST_COMMIT_MESSAGE" value="it works... i just need to make the css work more but it just doesnt want to. AI is making it way worse too" />
+    <MESSAGE value="Adding Abduls part test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding Abduls part test" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
