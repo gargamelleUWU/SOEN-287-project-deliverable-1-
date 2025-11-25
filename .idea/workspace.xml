@@ -5,35 +5,115 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="29999d38-a5ce-4dc6-9f10-1482de8920b3" name="Changes" comment="it works... i just need to make the css work more but it just doesnt want to. AI is making it way worse too">
-      <change afterPath="$PROJECT_DIR$/booking-dashboard.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/booking-request.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/contact.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/error.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/help.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/profile.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource-details.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/signup.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/SOEN-287-project-deliverable-1-.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SOEN-287-project-deliverable-2-.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2025-10-15,_8_02 p_m__[Changes]1/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2025-10-15__8_02p_m___Changes_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2025-10-19,_6_40 p_m__[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2025-10-19,_6_47 p_m__[Changes]1/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2025-10-19__6_40p_m___Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2025-10-19__6_47p_m___Changes_1.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdminDashboard.HTML" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookingDashboard.HTML" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookingRequest.HTML" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BrowseResources.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CopyAdmin.HTML" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ManageResources.HTML" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResourceDetails.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResourceSearch.HTML" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Statistics.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/hero-office.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/hero.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/logo-concordia.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/logo.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/university_study_room_.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/room.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/calendar.html" beforeDir="false" afterPath="$PROJECT_DIR$/calendar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Delivery 2/SOEN-287-project-deliverable-2/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Delivery 2/SOEN-287-project-deliverable-2/.idea/SOEN-287-project-deliverable-1-.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Delivery 2/SOEN-287-project-deliverable-2/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Delivery 2/SOEN-287-project-deliverable-2/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Delivery 2/SOEN-287-project-deliverable-2/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Delivery 2/SOEN-287-project-deliverable-2/.vscode/settings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Delivery 2/SOEN-287-project-deliverable-2/UnusedWorkArea.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Delivery 2/SOEN-287-project-deliverable-2/about.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Delivery 2/SOEN-287-project-deliverable-2/admin-availability.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Delivery 2/SOEN-287-project-deliverable-2/admin-statistics.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Delivery 2/SOEN-287-project-deliverable-2/assets/Computer lab student.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Delivery 2/SOEN-287-project-deliverable-2/assets/Montreal map.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Delivery 2/SOEN-287-project-deliverable-2/assets/Study room.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Delivery 2/SOEN-287-project-deliverable-2/assets/Uiversity sport hall .webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Delivery 2/SOEN-287-project-deliverable-2/assets/University study room .jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Delivery 2/SOEN-287-project-deliverable-2/assets/about.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Delivery 2/SOEN-287-project-deliverable-2/assets/art.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Delivery 2/SOEN-287-project-deliverable-2/assets/bookings.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Delivery 2/SOEN-287-project-deliverable-2/assets/browse.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Delivery 2/SOEN-287-project-deliverable-2/assets/comp-lab.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Delivery 2/SOEN-287-project-deliverable-2/assets/computer lab.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Delivery 2/SOEN-287-project-deliverable-2/assets/concordia-cover.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Delivery 2/SOEN-287-project-deliverable-2/assets/concordia-front.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Delivery 2/SOEN-287-project-deliverable-2/assets/concordia-logo-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Delivery 2/SOEN-287-project-deliverable-2/assets/contact.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Delivery 2/SOEN-287-project-deliverable-2/assets/david.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Delivery 2/SOEN-287-project-deliverable-2/assets/elena.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Delivery 2/SOEN-287-project-deliverable-2/assets/groupstudyA.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Delivery 2/SOEN-287-project-deliverable-2/assets/hero.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Delivery 2/SOEN-287-project-deliverable-2/assets/home-background.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Delivery 2/SOEN-287-project-deliverable-2/assets/leisure.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Delivery 2/SOEN-287-project-deliverable-2/assets/logo-concordia.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Delivery 2/SOEN-287-project-deliverable-2/assets/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Delivery 2/SOEN-287-project-deliverable-2/assets/room.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Delivery 2/SOEN-287-project-deliverable-2/assets/sarah.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Delivery 2/SOEN-287-project-deliverable-2/assets/sport facilities.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Delivery 2/SOEN-287-project-deliverable-2/booking-dashboard.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Delivery 2/SOEN-287-project-deliverable-2/booking-request.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Delivery 2/SOEN-287-project-deliverable-2/calendar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Delivery 2/SOEN-287-project-deliverable-2/contact.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Delivery 2/SOEN-287-project-deliverable-2/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Delivery 2/SOEN-287-project-deliverable-2/error.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Delivery 2/SOEN-287-project-deliverable-2/help.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Delivery 2/SOEN-287-project-deliverable-2/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Delivery 2/SOEN-287-project-deliverable-2/js/Booking.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Delivery 2/SOEN-287-project-deliverable-2/js/requests.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Delivery 2/SOEN-287-project-deliverable-2/js/resources.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Delivery 2/SOEN-287-project-deliverable-2/js/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Delivery 2/SOEN-287-project-deliverable-2/login-admin.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Delivery 2/SOEN-287-project-deliverable-2/login-user.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Delivery 2/SOEN-287-project-deliverable-2/manage-bookings.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Delivery 2/SOEN-287-project-deliverable-2/profile.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Delivery 2/SOEN-287-project-deliverable-2/resource-details.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Delivery 2/SOEN-287-project-deliverable-2/resources.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Delivery 2/SOEN-287-project-deliverable-2/signup.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/about.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-availability.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-statistics.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Computer lab student.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Montreal map.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Study room.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Uiversity sport hall .webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/University study room .jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/about.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/bookings.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/browse.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/comp-lab.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/computer lab.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/concordia-cover.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/concordia-front.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/concordia-logo-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/contact.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/david.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/elena.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/groupstudyA.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/hero.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/home-background.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/logo-concordia.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/room.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/sarah.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/sport facilities.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/booking-dashboard.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/booking-request.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/calendar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contact.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/error.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/help.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-details.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/signup.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +145,7 @@
     </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Resource-Details-Page" />
+        <entry key="$PROJECT_DIR$" value="Deliverable-2" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -104,7 +184,9 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultAutoModeForALLUsers.v1": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "#4 on Deliverable-2",
     "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/marcmicheal/IdeaProjects/SOEN-287-project-deliverable-1-",
@@ -158,9 +240,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.signup.html" />
+        <item itemvalue="JavaScript Debug.login.html" />
+        <item itemvalue="JavaScript Debug.index.html" />
         <item itemvalue="JavaScript Debug.index.html" />
         <item itemvalue="JavaScript Debug.login.html" />
-        <item itemvalue="JavaScript Debug.signup.html" />
       </list>
     </recent_temporary>
   </component>
@@ -182,6 +266,7 @@
       <workItem from="1760550488639" duration="18485000" />
       <workItem from="1760631255555" duration="644000" />
       <workItem from="1760633245250" duration="13218000" />
+      <workItem from="1764039130471" duration="1601000" />
     </task>
     <task id="LOCAL-00001" summary="reorganize">
       <option name="closed" value="true" />
