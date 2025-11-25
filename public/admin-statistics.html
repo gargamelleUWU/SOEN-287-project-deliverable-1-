@@ -13,7 +13,7 @@
     <header class="topbar">
         <div class="container topbar-row">
             <div class="brand">
-                <a href="index.html" aria-label="Logo"><img class="brand-logo" src="../assets/concordia-logo-icon.png"
+                <a href="index.html" aria-label="Logo"><img class="brand-logo" src="assets/concordia-logo-icon.png"
                         alt="Logo" onerror="this.replaceWith(document.createTextNode('Campus'))"></a>
                 <div class="brand-logo-text">Bookings</div>
             </div>
@@ -48,20 +48,20 @@
         <section class="title-block">
             <div class="eyebrow">Admin</div>
             <h1>Resource Usage Statistics</h1>
-            <p class="muted">View reports and analytics on resource usage.</p>
+            <p class="muted">View reports and analytics on resource usage. <button class="btn primary" onclick="location.reload()" style="display: inline-block; padding: 6px 12px; font-size: 14px;">🔄 Refresh</button></p>
         </section>
 
         <section class="grid3">
             <div class="card" style="padding: 16px;">
-                <h2 style="margin:0;">2,480</h2>
+                <h2 style="margin:0;" id="stat-total">0</h2>
                 <div class="muted">Total Bookings (Last 30 Days)</div>
             </div>
             <div class="card" style="padding: 16px;">
-                <h2 style="margin:0;">Study Room EV301</h2>
+                <h2 style="margin:0;" id="stat-popular">N/A</h2>
                 <div class="muted">Most Popular Resource</div>
             </div>
             <div class="card" style="padding: 16px;">
-                <h2 style="margin:0;">2:00 PM</h2>
+                <h2 style="margin:0;" id="stat-peak">N/A</h2>
                 <div class="muted">Peak Booking Hour</div>
             </div>
         </section>
@@ -89,10 +89,35 @@
 
         <section class="card" style="padding:16px; margin-top:12px;">
             <h4>Bookings per Day (Last 30 Days)</h4>
-            <div
+            <div id="chart-container"
                 style="height: 300px; border: 1px solid var(--line); border-radius: 12px; display: grid; place-items: center; background: #fcfcfc;">
-                <p class="muted">Chart data would be loaded here.</p>
+                <p class="muted">Loading chart data...</p>
+            </div>
+        </section>
 
+        <section class="card" style="padding:16px; margin-top:12px;">
+            <h4>Booking Statistics Summary</h4>
+            <div id="stats-summary" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 16px;">
+                <div>
+                    <strong id="stat-pending-count" style="color: #f59e0b;">0</strong>
+                    <div class="muted tiny">Pending Approval</div>
+                </div>
+                <div>
+                    <strong id="stat-active-count">0</strong>
+                    <div class="muted tiny">Active Bookings</div>
+                </div>
+                <div>
+                    <strong id="stat-completed-count">0</strong>
+                    <div class="muted tiny">Completed Bookings</div>
+                </div>
+                <div>
+                    <strong id="stat-cancelled-count">0</strong>
+                    <div class="muted tiny">Cancelled Bookings</div>
+                </div>
+                <div>
+                    <strong id="stat-rejected-count">0</strong>
+                    <div class="muted tiny">Rejected Bookings</div>
+                </div>
             </div>
         </section>
     </main>
@@ -148,6 +173,7 @@
         </div>
     </footer>
     <script src="js/script.js"></script>
+    <script src="js/admin-statistics.js"></script>
 </body>
 
 </html>

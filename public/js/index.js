@@ -48,16 +48,43 @@ document.addEventListener("DOMContentLoaded", function () {
     "notes",
     "date",
     "start",
-    "end",
+    "duration",
     "purpose",
     "building",
     "length"
   ];
 
+  // Helper function to calculate end time from start + duration
+  function calculateEndTime(startTime, durationMinutes) {
+    if (!startTime || !durationMinutes) return "";
+
+    const [hours, minutes] = startTime.split(':').map(Number);
+    const startMinutes = hours * 60 + minutes;
+    const endMinutes = startMinutes + parseInt(durationMinutes);
+
+    const endHours = Math.floor(endMinutes / 60);
+    const endMins = endMinutes % 60;
+
+    return `${String(endHours).padStart(2, '0')}:${String(endMins).padStart(2, '0')}`;
+  }
+
   // ---- API calls to Node server ----
   async function loadHistory() {
     try {
-      const res = await fetch("/api/bookings");
+      // Get current user to filter bookings
+      const currentUser = getCurrentUser();
+      if (!currentUser) {
+        console.log("No user logged in");
+        return [];
+      }
+
+      // Build query params based on role
+      const params = new URLSearchParams({
+        userEmail: currentUser.email,
+        userRole: currentUser.role
+      });
+
+      const res = await fetch(`/api/bookings?${params}`);
       if (!res.ok) throw new Error("Failed to load bookings");
       return await res.json();
     } catch (err) {
@@ -66,11 +93,35 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
+  // Helper to get current user from localStorage
+  function getCurrentUser() {
+    const userJson = localStorage.getItem("currentUser");
+    if (!userJson) return null;
+    try {
+      return JSON.parse(userJson);
+    } catch (e) {
+      return null;
+    }
+  }
+
   async function saveBookingToServer(bookingData) {
+    // Add user info to booking
+    const currentUser = getCurrentUser();
+    if (!currentUser) {
+      throw new Error("User not logged in");
+    }
+
+    const bookingWithUser = {
+      ...bookingData,
+      userId: currentUser.id,
+      userEmail: currentUser.email,
+      userName: currentUser.name
+    };
+
     const res = await fetch("/api/bookings", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(bookingData)
+      body: JSON.stringify(bookingWithUser)
     });
     if (!res.ok) throw new Error("Failed to save booking");
     return await res.json();
@@ -225,6 +276,45 @@ document.addEventListener("DOMContentLoaded", function () {
 
     loadDraft();
 
+    // ---- 3b2) Calculate and show end time dynamically ----
+    const startSelect = document.getElementById("start");
+    const durationSelect = document.getElementById("duration");
+
+    if (startSelect && durationSelect) {
+      function updateEndTimeDisplay() {
+        const start = startSelect.value;
+        const duration = durationSelect.value;
+
+        if (start && duration) {
+          const endTime = calculateEndTime(start, duration);
+
+          // Find or create end time display
+          let endTimeDisplay = document.getElementById("end-time-display");
+          if (!endTimeDisplay) {
+            endTimeDisplay = document.createElement("div");
+            endTimeDisplay.id = "end-time-display";
+            endTimeDisplay.style.marginTop = "8px";
+            endTimeDisplay.style.fontSize = "14px";
+            endTimeDisplay.style.color = "#059669";
+            endTimeDisplay.style.fontWeight = "600";
+            durationSelect.parentElement.appendChild(endTimeDisplay);
+          }
+
+          endTimeDisplay.textContent = `📅 Ends at: ${formatTime(endTime)}`;
+        }
+      }
+
+      function formatTime(time24) {
+        const [hours, minutes] = time24.split(':').map(Number);
+        const period = hours >= 12 ? 'PM' : 'AM';
+        const hours12 = hours % 12 || 12;
+        return `${hours12}:${String(minutes).padStart(2, '0')} ${period}`;
+      }
+
+      startSelect.addEventListener("change", updateEndTimeDisplay);
+      durationSelect.addEventListener("change", updateEndTimeDisplay);
+    }
+
     // ---- 3c) Final submit: send to Node server ----
     form.addEventListener("submit", async function (e) {
       e.preventDefault();
@@ -232,9 +322,26 @@ document.addEventListener("DOMContentLoaded", function () {
 
       const draft = readDraftData();
 
+      // Calculate end time from start + duration
+      const endTime = calculateEndTime(draft.start, draft.duration);
+
+      // Convert duration to human-readable format
+      const durationNum = parseInt(draft.duration);
+      let durationText = "";
+      if (durationNum >= 60) {
+        const hours = Math.floor(durationNum / 60);
+        const mins = durationNum % 60;
+        durationText = hours + (hours > 1 ? " hours" : " hour");
+        if (mins > 0) durationText += " " + mins + " min";
+      } else {
+        durationText = durationNum + " min";
+      }
+
       const booking = {
         ...draft,
-        status: "Active",
+        end: endTime,          // Add calculated end time
+        length: durationText,  // Add human-readable duration
+        status: "Pending",     // Changed from "Active" to "Pending"
         savedAt: new Date().toISOString()
       };
 
@@ -269,6 +376,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       history.forEach((b) => {
         const isCancelled = b.status === "Cancelled";
+        const isRejected = b.status === "Rejected";
 
         let dateObj = null;
         if (b.date) {
@@ -276,14 +384,14 @@ document.addEventListener("DOMContentLoaded", function () {
           dateObj.setHours(0, 0, 0, 0);
         }
 
-        if (isCancelled) {
+        if (isCancelled || isRejected) {
           past.push(b);
         } else if (!dateObj) {
           past.push(b);
         } else if (dateObj < today) {
           past.push(b); // date already passed
         } else {
-          active.push(b); // future + not cancelled
+          active.push(b); // future + not cancelled/rejected (includes Pending and Active)
         }
       });
 
@@ -323,11 +431,14 @@ document.addEventListener("DOMContentLoaded", function () {
           (booking.full || "Unnamed") +
           (booking.email ? " — " + booking.email : "");
 
+        const statusLabel = booking.status === "Pending" ? "Pending Approval" : "Upcoming";
+        const statusColor = booking.status === "Pending" ? "color: #f59e0b;" : "";
+
         row.innerHTML = `
           <div>
             <strong>${booking.resource || "Resource"}</strong><br>
             <span class="muted tiny">
-              ${datePart ? datePart + " · " : ""}${timePart ? timePart + " · " : ""}Upcoming
+              ${datePart ? datePart + " · " : ""}${timePart ? timePart + " · " : ""}<span style="${statusColor}">${statusLabel}</span>
             </span><br>
             <span class="muted tiny">${nameEmail}</span>
           </div>
@@ -373,6 +484,8 @@ document.addEventListener("DOMContentLoaded", function () {
         let statusLabel = "";
         if (b.status === "Cancelled") {
           statusLabel = " (Cancelled)";
+        } else if (b.status === "Rejected") {
+          statusLabel = " (Rejected)";
         } else {
           statusLabel = " (Completed)";
         }
