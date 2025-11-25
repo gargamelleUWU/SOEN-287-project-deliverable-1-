@@ -1,0 +1,22 @@
+The major interactive features have yet to be implemented.
+He have focused on making a strong foundaction that is visually
+cohesive and primed for the next step. 
+
+The next delivarble will see this website turn from a shell to a
+fully functional interactive wesbite where users can make booking
+requests, change their profile, cancel bookings, search bookings,
+etc. Admins will be able to create bookings, validate or deny
+requests, temporarily block bookins, and see statistics about the
+bookings. We will also add a functional authentication feature
+which will dicate if the account is user or admin, which will
+look slightly different.
+
+Our files can easily be run using VS Code and the live server
+extension. Alternatively, the website can be laucnhed through
+local files after unzipping the folder.
+
+Our website is quick straight forward, the user can navigate
+between the all the pages (both user and admin for now) through
+the navigation bar at the top. The website can be interacted with
+but for now, none of the back-end script has been added. This
+website is a strong foundation ready for the back-end.
